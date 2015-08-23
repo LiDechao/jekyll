@@ -1,6 +1,7 @@
 ---
 layout: home
 ---
+<link rel="shortcut icon" href="favicon.ico">
 
 <div class="index-content blog">
     <div class="section">
