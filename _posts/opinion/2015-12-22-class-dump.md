@@ -24,6 +24,9 @@ description: class-dump 是用来 dump 目标对象的 class 的信息的工具�
 
 ##实战
 1. 新建一个程序，打包出ipa，这里不要从商店里下载，因为从商店下载的程序有壳，无法直接访问。
+
+(砸壳的教程可以参考[这里](http://www.dechao.net/dumpdecrypted/) )
+
 2. 将ipa文件解压，进入到程序的目录，使用Xcode自带的plutil工具查看Info.plist中的 “CFBundleExecutable” 字段，如下：
 
           plutil -p Info.plist | grep CFBundleExecutable
@@ -32,7 +35,9 @@ description: class-dump 是用来 dump 目标对象的 class 的信息的工具�
 
           "CFBundleExecutable" => "IOSAPP"
 
-3. 使用class-dump来分析APP：class-dump -S -s -H IOSAPP -o ~/Desktop/reveal
+3. 使用class-dump来分析APP：
+
+		class-dump -S -s -H IOSAPP -o ~/Desktop/reveal
 
 部分参数说明：
 
