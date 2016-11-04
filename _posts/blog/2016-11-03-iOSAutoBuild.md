@@ -126,11 +126,6 @@ http://localhost:8080
 
 ![Reveal](/images/blog/iOSAutoBuild/build_3_1.png)
 
-常用操作:
-
-* 重启：在浏览器里输入 [http://localhost:8080/restart] (http://localhost:8080/restart)
-* 退出：在浏览器里输入 [http://localhost:8080/exit](http://localhost:8080/exit)
-
 ###创建项目
 点击左上角的新建，或是店家开始创建一个新任务，出现下面的页面:
 
@@ -198,6 +193,38 @@ http://localhost:8080
 然后其他的构建、查看过程都一致。
 
 到蒲公英上检查，果然存在。完美！
+
+###便捷设置
+以上面的方式运行的`Jenkins`的，命令行是不能关闭的，为了方便的话，需要设置在后台运行：
+
+```
+nohup java -jar jenkins.war &
+```
+将命令写入到sh文件中，比如就叫 start.sh，运行的时候直接跑脚本就好，附上文件内容：
+
+```
+#!/bin/sh
+nohup java -jar /Users/home/Desktop/jenkinsWorkspace/jenkins/jenkins.war &
+```
+
+同样的，关闭命令也可以直接使用，不过在使用关闭之前，需要下载个 `jenkins-cli.jar`文件：
+
+> 首页 -> 系统管理 -> Jenkins CLI
+
+里面同样包含好多其他命令，可以根据自己需要来调试。
+
+设置关闭 `Jenkins` 的脚本：
+
+```
+#!/bin/sh
+java -jar /Users/home/Documents/jenkins/jenkins-cli.jar -s http://localhost:8080/ shutdown
+
+```
+
+别忘记修改为自己的路径。
+
+一般的命令可以直接在网址上体现出来，比如重启: [http://localhost:8080/restart](http://localhost:8080/restart)
+
 
 ##参考：
 [iOS 自动构建命令——xcodebuild](http://www.jianshu.com/p/3f43370437d2)
