@@ -225,6 +225,8 @@ java -jar /Users/home/Documents/jenkins/jenkins-cli.jar -s http://localhost:8080
 
 一般的命令可以直接在网址上体现出来，比如重启: [http://localhost:8080/restart](http://localhost:8080/restart)
 
+上面既然用了iOS的打包，所以脚本感觉也是用swift来写也是比较配套的，在这里就不贴出来了，喜欢研究的童鞋就google一下~，我将之命名为`begin.swift`和`end.swift`，恩，感觉还汗不错的
+
 
 ##参考：
 [iOS 自动构建命令——xcodebuild](http://www.jianshu.com/p/3f43370437d2)
