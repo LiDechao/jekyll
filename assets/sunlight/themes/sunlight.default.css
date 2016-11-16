@@ -26,10 +26,14 @@
 	margin-right: 0 !important;
 	padding-right: 0 !important;
 }
+
+/* 设置去掉line number */
 .sunlight-line-number-margin {
 	display: none;
 }
-.sunlight-objective-c {
+
+/* 设置字间距 */
+.sunlight-objective-c,.sunlight-plaintext {
 	line-height: 1.8
 }
 .sunlight-code-container > .sunlight-highlighted {
