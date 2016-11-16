@@ -33,6 +33,7 @@ jekyll-archives:
     - categories
     - tags
   layout: 'archive'
+  pygments: true
   permalinks:
     # year: '/:year/'
     # month: '/:year/:month/'
