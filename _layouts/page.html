@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     {% include head.html %}
 </head>
@@ -31,17 +31,17 @@
                         {% endif %}
 
                         {% if site.readtime %}
-                            &nbsp; <span class="post-tags"> <i class="fa fa-clock-o"></i> &nbsp; 
+                            &nbsp; <span class="post-tags"> <i class="fa fa-clock-o"></i> &nbsp;
                             {% if readtime > 1 and readtime < 1.5 %}
                                 1 minute read
                             {% endif %}
-                            {% if readtime > 1.5 %} 
-                                <span class="time"> {{ readtime }} </span> minutes read 
-                            {% endif %} 
-                            {% if readtime < 1 %} 
+                            {% if readtime > 1.5 %}
+                                <span class="time"> {{ readtime }} </span> minutes read
+                            {% endif %}
+                            {% if readtime < 1 %}
                                 Less than 1 minute read
                             {% endif %}
-                            </span> 
+                            </span>
                         {% endif %}
                         </div>
                     </header>
@@ -49,7 +49,24 @@
                     <div class="page-body" itemprop="description">
                         {{ content }}
                     </div>
-                    
+
+                    <!-- 多说评论框 start -->
+	<div class="ds-thread"</div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"idechao"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
                 </article>
             </div>
         </div>
@@ -57,6 +74,6 @@
 
     {% include footer.html %}
 
-    {% include scripts.html %}  
+    {% include scripts.html %}
 </body>
 </html>
