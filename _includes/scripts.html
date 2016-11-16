@@ -16,12 +16,12 @@
 <script type="text/javascript">
     Sunlight.highlightAll();
     // Sunlight.lineNumbers(false);
-    // var options = {
-    //   lineNumbers: false,
-    //   lineHighlight: [2, 4, 5, 6]
-    // };
-    // var hhighlighter = new Sunlight.Highlighter(options);
-    // hhighlighter.highlightNode(document.getElementById("line-number-example"));
+    var options = {
+      lineNumbers: false,
+      lineHighlight: [2, 4, 5, 6]
+    };
+    var hhighlighter = new Sunlight.Highlighter(options);
+    hhighlighter.highlightNode(document.getElementById("line-number-example"));
 
 //     var options = {
 //       lineNumbers: false,
@@ -31,12 +31,12 @@
 // var highlighter = new Sunlight.Highlighter(options);
 // highlighter.highlightNode(document.getElementById("line-number-example"));
 
-var highlighter = new Sunlight.Highlighter({
-    lineNumbers: false,
-    lineHighlight: [2, 4, 5, 6]
-});
-
-highlighter.highlightNode(document.getElementById("line-highlight-example"));
+// var highlighter = new Sunlight.Highlighter({
+//     lineNumbers: false,
+//     lineHighlight: [2, 4, 5, 6]
+// });
+//
+// highlighter.highlightNode(document.getElementById("line-highlight-example"));
 
 </script>
 <script type='text/javascript'>$(document).ready(function(){$(".time").text(function(a,b){return Math.round(parseFloat(b))})});</script>
