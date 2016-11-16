@@ -1011,3 +1011,9 @@ public object DoStuff() {
 <pre>
 int a = 1;
 </pre>
+
+<pre class="sunlight-highlight-csharp">
+public object DoStuff() {
+    return new object();
+}
+</pre>
