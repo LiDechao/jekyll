@@ -2020,7 +2020,7 @@ a#slide:hover {
   background: #39c492;
 }
 
-a#slide.slide2:after {
+a#slide:after {
   content: "F";
 }
 
