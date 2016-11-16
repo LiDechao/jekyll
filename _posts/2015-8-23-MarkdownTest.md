@@ -1023,11 +1023,22 @@ public object DoStuff() {
 </pre>
 
 
-<code class="hljs livecodeserver">{% highlight ruby %}
+<code class="hljs livecodeserver">{% highlight c %}
 /* hello world demo */
 #include <stdio.h>
 int main(int argc, char **argv)
 {
     printf("Hello, World!\n");
     return 0;
-}ighlight %}</code>
+}
+{% endhighlight %}</code>
+
+{% highlight c %}
+/* hello world demo */
+#include <stdio.h>
+int main(int argc, char **argv)
+{
+    printf("Hello, World!\n");
+    return 0;
+}
+{% endhighlight %}
