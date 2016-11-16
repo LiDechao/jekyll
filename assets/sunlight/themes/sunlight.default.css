@@ -10,6 +10,7 @@
 	border: none;
 	border-color: #969696 !important;
 	background-color: #FFFFFF !important;
+	border-width: 0px !important;
 }
 .sunlight-highlighted, .sunlight-container, .sunlight-container textarea, .sunlight-container pre {
 	font-family: Consolas, Inconsolata, Monaco, "Courier New" !important;
@@ -44,10 +45,6 @@
 .sunlight-highlighted {
 	z-index: 1;
 	position: relative;
-}
-
-.sunlight-code-container {
-	border-width: 0px;
 }
 .sunlight-highlighted * {
 	background: transparent;
