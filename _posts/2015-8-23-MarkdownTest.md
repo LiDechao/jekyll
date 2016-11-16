@@ -1033,7 +1033,7 @@ int main(int argc, char **argv)
 }
 {% endhighlight %}</code>
 
-{% highlight Objective-C %}
+{% highlight objc %}
 #define kFocusImageHWScale 0.48
 @interface LMAttentionViewController () <LMAttentionHeaderViewDelegate>
 @property (nonatomic, strong) LMAttentionHeaderView *headerView;
