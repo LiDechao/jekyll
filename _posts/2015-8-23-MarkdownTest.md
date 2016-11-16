@@ -947,3 +947,15 @@ end
 @property (nonatomic, strong) UIButton               *moreButton;
 @property (nonatomic, strong) UIView                 *seperateView;
 {% endhighlight %}</code>
+
+<pre class="sunlight-highlight-Objective-C">
+public object DoStuff() {
+    return new object();
+}
+</pre>
+
+<pre class="sunlight-highlight-objective-c">
+public object DoStuff() {
+    return new object();
+}
+</pre>

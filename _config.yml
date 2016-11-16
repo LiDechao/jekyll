@@ -33,7 +33,6 @@ jekyll-archives:
     - categories
     - tags
   layout: 'archive'
-  pygments: true
   permalinks:
     # year: '/:year/'
     # month: '/:year/:month/'
@@ -108,14 +107,3 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-
-# kramdown:
-#   input: GFM
-#   extensions:
-#     - autolink
-#     - footnotes
-#     - smart
-#   use_coderay: true
-#   syntax_highlighter: rouge
-#   coderay:
-#     coderay_line_numbers:  nil
