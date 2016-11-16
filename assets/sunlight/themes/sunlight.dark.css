@@ -10,6 +10,7 @@
 	border: none;
 	border-color: #626262 !important;
 	background-color: #262626 !important;
+	border-width: 0px !important;
 }
 .sunlight-highlighted, .sunlight-container, .sunlight-container textarea, .sunlight-container pre {
 	font-family: Consolas, Inconsolata, Monaco, "Courier New" !important;
@@ -25,6 +26,16 @@
 	margin-left: 0 !important;
 	margin-right: 0 !important;
 	padding-right: 0 !important;
+}
+
+/* 设置去掉line number */
+.sunlight-line-number-margin {
+	display: none;
+}
+
+/* 设置字间距 */
+.sunlight-objective-c,.sunlight-plaintext {
+	line-height: 1.8
 }
 .sunlight-code-container > .sunlight-highlighted {
 	white-space: pre;
@@ -283,7 +294,7 @@
 .sunlight-bash .sunlight-verbatimCommand {
 	color: #BBA4EE !important;
 }
-.sunlight-bash .sunlight-variable, 
+.sunlight-bash .sunlight-variable,
 .sunlight-bash .sunlight-specialVariable {
 	color: #ED8585 !important;
 }
