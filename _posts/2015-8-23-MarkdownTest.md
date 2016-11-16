@@ -952,6 +952,30 @@ end
 public object DoStuff() {
     return new object();
 }
+@property (nonatomic, strong) UICollectionView       *collectionView;
+@property (nonatomic, strong) UILabel                *titleLabel;
+@property (nonatomic, strong) UIButton               *moreButton;
+@property (nonatomic, strong) UIView                 *seperateView;
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.backgroundColor = kLMColorF4F4F4;
+        _model = [[LMAttentionHeaderModel alloc] init];
+        [self p_layoutSubviews];
+    }
+    return self;
+}
+
+- (void)reloadData {
+    @weakify(self);
+    [self.model requestForHeaderDataWithResult:^(BOOL result, NSArray *array) {
+        @strongify(self);
+        if (!result) {
+            return ;
+        }
+        [self.collectionView reloadData];
+    }];
+}
+
 </pre>
 
 <pre class="sunlight-highlight-objective-c">
@@ -982,27 +1006,4 @@ public object DoStuff() {
 }
 }
 
-@property (nonatomic, strong) UICollectionView       *collectionView;
-@property (nonatomic, strong) UILabel                *titleLabel;
-@property (nonatomic, strong) UIButton               *moreButton;
-@property (nonatomic, strong) UIView                 *seperateView;
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = kLMColorF4F4F4;
-        _model = [[LMAttentionHeaderModel alloc] init];
-        [self p_layoutSubviews];
-    }
-    return self;
-}
-
-- (void)reloadData {
-    @weakify(self);
-    [self.model requestForHeaderDataWithResult:^(BOOL result, NSArray *array) {
-        @strongify(self);
-        if (!result) {
-            return ;
-        }
-        [self.collectionView reloadData];
-    }];
-}
 </pre>
