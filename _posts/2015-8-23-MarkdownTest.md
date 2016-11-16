@@ -1033,12 +1033,28 @@ int main(int argc, char **argv)
 }
 {% endhighlight %}</code>
 
-{% highlight c %}
-/* hello world demo */
-#include <stdio.h>
-int main(int argc, char **argv)
-{
-    printf("Hello, World!\n");
-    return 0;
+{% highlight Objective-C %}
+#define kFocusImageHWScale 0.48
+@interface LMAttentionViewController () <LMAttentionHeaderViewDelegate>
+@property (nonatomic, strong) LMAttentionHeaderView *headerView;
+@property (nonatomic, strong) LMAttentionModel      *model;
+@end
+@implementation LMAttentionViewController
+#pragma mark - life cycle
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = kLMColorF4F4F4;
+    self.title = @"关注";
+    _model = [[LMAttentionModel alloc] init];
+    [self addDefaultTableView];
+    [self addMJRefresh];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.tableHeaderView = self.headerView;
+    self.tableView.backgroundColor = kLMColorF4F4F4;
+    // 断网提示
+    if (self.networkStatus == AFNetworkReachabilityStatusNotReachable) {
+        [self showNetworkBar:0];
+    }
+    [self p_requestForData:LMListRequestTypeNew];
 }
 {% endhighlight %}
