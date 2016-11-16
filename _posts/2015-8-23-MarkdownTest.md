@@ -1010,6 +1010,10 @@ public object DoStuff() {
 
 <pre>
 int a = 1;
+@property (nonatomic, strong) UICollectionView       *collectionView;
+@property (nonatomic, strong) UILabel                *titleLabel;
+@property (nonatomic, strong) UIButton               *moreButton;
+@property (nonatomic, strong) UIView                 *seperateView;
 </pre>
 
 <pre class="sunlight-highlight-csharp">
