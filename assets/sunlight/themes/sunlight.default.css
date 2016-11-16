@@ -26,6 +26,9 @@
 	margin-right: 0 !important;
 	padding-right: 0 !important;
 }
+.sunlight-line-number-margin {
+	display: none;
+}
 .sunlight-code-container > .sunlight-highlighted {
 	white-space: pre;
 	overflow-x: auto;
