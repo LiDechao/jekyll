@@ -907,3 +907,17 @@ Markdown provides backslash escapes for the following characters:
 	-	minus sign (hyphen)
     .   dot
     !   exclamation mark
+    
+    
+    
+    
+   最后，我测试下添加code的方式：
+   
+   ```
+   试试使用`的形式能不能添加上去
+   ```
+
+`如果上面的不行就只好使用一个点了
+`
+
+`if (1) {return ;}`

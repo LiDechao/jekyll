@@ -16,17 +16,21 @@ Here is an example of what a post with a gallery might look like. If you want to
 	<a href="{{ site.url }}/images/gallery1/photo (18).jpg"><img src="{{ site.url }}/images/gallery1/photo (17).jpg"></a>
 	<a href="{{ site.url }}/images/gallery1/photo (10).jpg"><img src="{{ site.url }}/images/gallery1/photo (9).jpg"></a>
 </figure>
+
 <figure class="half">
 	<a href="{{ site.url }}/images/gallery1/photo (6).jpg"><img src="{{ site.url }}/images/gallery1/photo (5).jpg"></a>
 	<a href="{{ site.url }}/images/gallery1/photo (12).jpg"><img src="{{ site.url }}/images/gallery1/photo (11).jpg"></a>
 </figure>
+
 <figure>
 	<a href="{{ site.url }}/images/gallery1/photo (16).jpg"><img src="{{ site.url }}/images/gallery1/photo (16).jpg"></a>
 </figure>
+
 <figure class="half">
 	<a href="{{ site.url }}/images/gallery1/photo (14).jpg"><img src="{{ site.url }}/images/gallery1/photo (13).jpg"></a>
 	<a href="{{ site.url }}/images/gallery1/photo (20).jpg"><img src="{{ site.url }}/images/gallery1/photo (19).jpg"></a>
 </figure>
+
 <figure class="third">
 	<a href="{{ site.url }}/images/gallery1/photo (22).jpg"><img src="{{ site.url }}/images/gallery1/photo (21).jpg"></a>
 	<a href="{{ site.url }}/images/gallery1/photo (24).jpg"><img src="{{ site.url }}/images/gallery1/photo (23).jpg"></a>
