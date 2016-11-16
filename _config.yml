@@ -15,7 +15,7 @@ animated_fins:    true
 fin_color:        "255,255,255"
 # Change url to your domain. Leave localhost server or blank when working locally.
 url:          http://hmfaysal.me/hmfaysal-omega-theme
-# baseurl:           
+# baseurl:
 
 # Gems used
 gems:
@@ -42,9 +42,9 @@ jekyll-archives:
 
 # Owner/author information
 author:
-  name:           Your Name
+  name:           idechao
   picture:        your-photo.jpg
-  email:          your@email.com
+  email:          idechao@163.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Some Details about yourself
   # Social networking links used in footer. Update and remove as you like.
