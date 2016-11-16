@@ -14,8 +14,14 @@
 <script type="text/javascript" src="{{ site.url }}/assets/sunlight/sunlight-min.js"></script>
 <script type="text/javascript" src="{{ site.url }}/assets/sunlight/sunlight-all-min.js"></script>
 <script type="text/javascript">
-    Sunlight.highlightAll();
+    // Sunlight.highlightAll();
     // Sunlight.lineNumbers(false);
+    var options = {
+      lineNumbers: false,
+      lineHighlight: [2, 4, 5, 6]
+    };
+    var hhighlighter = new Sunlight.Highlighter(options);
+    hhighlighter.highlightNode(document.getElementById("line-number-example"));
 </script>
 <script type='text/javascript'>$(document).ready(function(){$(".time").text(function(a,b){return Math.round(parseFloat(b))})});</script>
 
