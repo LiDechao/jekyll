@@ -2020,7 +2020,7 @@ a#slide:hover {
   background: #39c492;
 }
 
-a#slide:after {
+a#slide.slide2:after {
   content: "F";
 }
 
@@ -2223,7 +2223,7 @@ body.slide {
 /*      Responsive      */
 
 @media screen and (max-width:1140px) {
-    
+
   #header,
     #posts-container,
     .entry .text,
@@ -2256,7 +2256,7 @@ body.slide {
 }
 
 @media screen and (max-width:500px) {
-    
+
   a#slide {
     position: absolute;
   }
