@@ -42,8 +42,12 @@
 	overflow-y: hidden; /* ie requires this wtf? */
 }
 .sunlight-highlighted {
-	z-index: 0;
+	z-index: 1;
 	position: relative;
+}
+
+.sunlight-code-container {
+	border-width: 0px;
 }
 .sunlight-highlighted * {
 	background: transparent;
