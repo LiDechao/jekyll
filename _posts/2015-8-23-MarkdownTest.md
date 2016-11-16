@@ -922,3 +922,14 @@ Markdown provides backslash escapes for the following characters:
 `
 
 `if (1) {return ;}`
+
+
+<code class="hljs livecodeserver">{% highlight ruby %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}</code>

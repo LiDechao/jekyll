@@ -100,21 +100,21 @@ collections:
   pages:
     output: true
     permalink: /:title
-# 
-# kramdown:
-#   input: GFM
-#   auto_ids: true
-#   footnote_nr: 1
-#   entity_output: as_char
-#   toc_levels: 1..6
 
 kramdown:
   input: GFM
-  extensions:
-    - autolink
-    - footnotes
-    - smart
-  use_coderay: true
-  syntax_highlighter: rouge
-  coderay:
-    coderay_line_numbers:  nil
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+
+# kramdown:
+#   input: GFM
+#   extensions:
+#     - autolink
+#     - footnotes
+#     - smart
+#   use_coderay: true
+#   syntax_highlighter: rouge
+#   coderay:
+#     coderay_line_numbers:  nil
