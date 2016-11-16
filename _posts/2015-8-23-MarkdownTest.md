@@ -933,3 +933,17 @@ def show
   end
 end
 {% endhighlight %}</code>
+
+<code class="hljs livecodeserver">{% highlight ruby %}
+@property (nonatomic, strong) UICollectionView       *collectionView;
+@property (nonatomic, strong) UILabel                *titleLabel;
+@property (nonatomic, strong) UIButton               *moreButton;
+@property (nonatomic, strong) UIView                 *seperateView;
+{% endhighlight %}</code>
+
+<code class="hljs livecodeserver">{% highlight objective-c %}
+@property (nonatomic, strong) UICollectionView       *collectionView;
+@property (nonatomic, strong) UILabel                *titleLabel;
+@property (nonatomic, strong) UIButton               *moreButton;
+@property (nonatomic, strong) UIView                 *seperateView;
+{% endhighlight %}</code>
