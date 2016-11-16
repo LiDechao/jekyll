@@ -1007,3 +1007,7 @@ public object DoStuff() {
 }
 
 </pre>
+
+<pre>
+int a = 1;
+</pre>
