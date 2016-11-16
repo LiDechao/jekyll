@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Site description for the metas.
+title:            吵了个吵
+description:      日拱一卒，功不唐捐。可以十年不将军，不可一日不拱卒。
 logo:             omikron.png
 disqus_shortname: shortname
 # Assign a default image for your site's header and footer
@@ -14,7 +14,7 @@ animated_fins:    true
 # Specify the fin color in RGB value
 fin_color:        "255,255,255"
 # Change url to your domain. Leave localhost server or blank when working locally.
-url:          http://hmfaysal.me/hmfaysal-omega-theme
+url:          http://dechao.net
 # baseurl:
 
 # Gems used
