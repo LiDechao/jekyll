@@ -941,7 +941,7 @@ end
 @property (nonatomic, strong) UIView                 *seperateView;
 {% endhighlight %}</code>
 
-<code class="hljs livecodeserver">{% highlight objective-c %}
+<code class="hljs livecodeserver">{% highlight Objective-C %}
 @property (nonatomic, strong) UICollectionView       *collectionView;
 @property (nonatomic, strong) UILabel                *titleLabel;
 @property (nonatomic, strong) UIButton               *moreButton;
