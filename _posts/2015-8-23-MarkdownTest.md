@@ -1022,10 +1022,12 @@ public object DoStuff() {
 }
 </pre>
 
-<pre class="sunlight-highlight-plaintext">
-int a = 1;
-@property (nonatomic, strong) UICollectionView       *collectionView;
-@property (nonatomic, strong) UILabel                *titleLabel;
-@property (nonatomic, strong) UIButton               *moreButton;
-@property (nonatomic, strong) UIView                 *seperateView;
-</pre>
+
+<code class="hljs livecodeserver">{% highlight ruby %}
+/* hello world demo */
+#include <stdio.h>
+int main(int argc, char **argv)
+{
+    printf("Hello, World!\n");
+    return 0;
+}ighlight %}</code>
