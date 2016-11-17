@@ -47,7 +47,7 @@ Markdown: Syntax
 **Note:** This document is itself written using Markdown; you
 can [see the source for it by adding '.text' to the URL][src].
 
-  [src]: /_posts/2014-05-15-first-commit.md
+  [src]: /blog/MarkdownSyntax.md
 
 * * *
 
@@ -108,6 +108,7 @@ to add extra (unwanted) `<p>` tags around HTML block-level tags.
 
 For example, to add an HTML table to a Markdown article:
 
+<pre>
     This is a regular paragraph.
 
     <table>
@@ -117,6 +118,7 @@ For example, to add an HTML table to a Markdown article:
     </table>
 
     This is another regular paragraph.
+</pre>
 
 Note that Markdown formatting syntax is not processed within block-level
 HTML tags. E.g., you can't use Markdown-style `*emphasis*` inside an
@@ -144,12 +146,16 @@ Ampersands in particular are bedeviling for web writers. If you want to
 write about 'AT&T', you need to write '`AT&amp;T`'. You even need to
 escape ampersands within URLs. Thus, if you want to link to:
 
-    http://images.google.com/images?num=30&q=larry+bird
-
+<pre>
+http://images.google.com/images?num=30&q=larry+bird
+</pre>
+ 
 you need to encode the URL as:
 
-    http://images.google.com/images?num=30&amp;q=larry+bird
-
+<pre>
+http://images.google.com/images?num=30&amp;q=larry+bird
+</pre>
+ 
 in your anchor tag `href` attribute. Needless to say, this is easy to
 forget, and is probably the single most common source of HTML validation
 errors in otherwise well-marked-up web sites.
@@ -161,35 +167,45 @@ into `&amp;`.
 
 So, if you want to include a copyright symbol in your article, you can write:
 
-    &copy;
-
+<pre>
+&copy;
+</pre>
+ 
 and Markdown will leave it alone. But if you write:
 
-    AT&T
-
+<pre>
+AT&T
+</pre>
+ 
 Markdown will translate it to:
 
-    AT&amp;T
-
+<pre>
+AT&amp;T
+</pre>
+ 
 Similarly, because Markdown supports [inline HTML](#html), if you use
 angle brackets as delimiters for HTML tags, Markdown will treat them as
 such. But if you write:
 
+ <pre>
     4 < 5
-
+ </pre>
+ 
 Markdown will translate it to:
 
+ <pre>
     4 &lt; 5
-
+ </pre>
+ 
 However, inside Markdown code spans and blocks, angle brackets and
 ampersands are *always* encoded automatically. This makes it easy to use
 Markdown to write about HTML code. (As opposed to raw HTML, which is a
 terrible format for writing about HTML syntax, because every single `<`
 and `&` in your example code needs to be escaped.)
 
-
+<pre>
 * * *
-
+</pre>
 
 <h2 id="block">Block Elements</h2>
 
@@ -215,9 +231,10 @@ Yes, this takes a tad more effort to create a `<br />`, but a simplistic
 Markdown's email-style [blockquoting][bq] and multi-paragraph [list items][l]
 work best -- and look better -- when you format them with hard breaks.
 
+ <pre>
   [bq]: #blockquote
   [l]:  #list
-
+ </pre>
 
 
 <h3 id="header">Headers</h3>
@@ -227,35 +244,40 @@ Markdown supports two styles of headers, [Setext] [1] and [atx] [2].
 Setext-style headers are "underlined" using equal signs (for first-level
 headers) and dashes (for second-level headers). For example:
 
+ <pre>
     This is an H1
     =============
 
     This is an H2
     -------------
-
+ </pre>
+ 
 Any number of underlining `=`'s or `-`'s will work.
 
 Atx-style headers use 1-6 hash characters at the start of the line,
 corresponding to header levels 1-6. For example:
 
+ <pre>
     # This is an H1
 
     ## This is an H2
 
     ###### This is an H6
-
+ </pre>
+ 
 Optionally, you may "close" atx-style headers. This is purely
 cosmetic -- you can use this if you think it looks better. The
 closing hashes don't even need to match the number of hashes
 used to open the header. (The number of opening hashes
 determines the header level.) :
 
+ <pre>
     # This is an H1 #
 
     ## This is an H2 ##
 
     ### This is an H3 ######
-
+ </pre>
 
 <h3 id="blockquote">Blockquotes</h3>
 
@@ -263,17 +285,20 @@ Markdown uses email-style `>` characters for blockquoting. If you're
 familiar with quoting passages of text in an email message, then you
 know how to create a blockquote in Markdown. It looks best if you hard
 wrap the text and put a `>` before every line:
-
+ 
+ <pre>
     > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
     > consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
     > Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
     > 
     > Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
     > id sem consectetuer libero luctus adipiscing.
-
+ </pre>
+ 
 Markdown allows you to be lazy and only put the `>` before the first
 line of a hard-wrapped paragraph:
 
+ <pre>
     > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
     consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
     Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
@@ -289,10 +314,12 @@ adding additional levels of `>`:
     > > This is nested blockquote.
     >
     > Back to the first level.
-
+ </pre>
+ 
 Blockquotes can contain other Markdown elements, including headers, lists,
 and code blocks:
 
+ <pre>
 	> ## This is a header.
 	> 
 	> 1.   This is the first list item.
@@ -301,7 +328,8 @@ and code blocks:
 	> Here's some example code:
 	> 
 	>     return shell_exec("echo $input | $markdown_script");
-
+ </pre>
+ 
 Any decent text editor should make email-style quoting easy. For
 example, with BBEdit, you can make a selection and choose Increase
 Quote Level from the Text menu.
@@ -908,153 +936,3 @@ Markdown provides backslash escapes for the following characters:
     .   dot
     !   exclamation mark
     
-    
-    
-    
-   最后，我测试下添加code的方式：
-   
-   ```
-   试试使用`的形式能不能添加上去
-   按道理来说可以吧
-   ```
-
-`如果上面的不行就只好使用一个点了
-`
-
-`if (1) {return ;}`
-
-
-<code class="hljs livecodeserver">{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %}</code>
-
-<code class="hljs livecodeserver">{% highlight ruby %}
-@property (nonatomic, strong) UICollectionView       *collectionView;
-@property (nonatomic, strong) UILabel                *titleLabel;
-@property (nonatomic, strong) UIButton               *moreButton;
-@property (nonatomic, strong) UIView                 *seperateView;
-{% endhighlight %}</code>
-
-<code class="hljs livecodeserver">{% highlight Objective-C %}
-@property (nonatomic, strong) UICollectionView       *collectionView;
-@property (nonatomic, strong) UILabel                *titleLabel;
-@property (nonatomic, strong) UIButton               *moreButton;
-@property (nonatomic, strong) UIView                 *seperateView;
-{% endhighlight %}</code>
-
-<pre class="sunlight-highlight-Objective-C">
-public object DoStuff() {
-    return new object();
-}
-@property (nonatomic, strong) UICollectionView       *collectionView;
-@property (nonatomic, strong) UILabel                *titleLabel;
-@property (nonatomic, strong) UIButton               *moreButton;
-@property (nonatomic, strong) UIView                 *seperateView;
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = kLMColorF4F4F4;
-        _model = [[LMAttentionHeaderModel alloc] init];
-        [self p_layoutSubviews];
-    }
-    return self;
-}
-
-- (void)reloadData {
-    @weakify(self);
-    [self.model requestForHeaderDataWithResult:^(BOOL result, NSArray *array) {
-        @strongify(self);
-        if (!result) {
-            return ;
-        }
-        [self.collectionView reloadData];
-    }];
-}
-
-</pre>
-
-<pre class="sunlight-highlight-objective-c">
-public object DoStuff() {
-    return new object();
-@property (nonatomic, strong) UICollectionView       *collectionView;
-@property (nonatomic, strong) UILabel                *titleLabel;
-@property (nonatomic, strong) UIButton               *moreButton;
-@property (nonatomic, strong) UIView                 *seperateView;
-- (instancetype)initWithFrame:(CGRect)frame {
-    if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = kLMColorF4F4F4;
-        _model = [[LMAttentionHeaderModel alloc] init];
-        [self p_layoutSubviews];
-    }
-    return self;
-}
-
-- (void)reloadData {
-    @weakify(self);
-    [self.model requestForHeaderDataWithResult:^(BOOL result, NSArray *array) {
-        @strongify(self);
-        if (!result) {
-            return ;
-        }
-        [self.collectionView reloadData];
-    }];
-}
-}
-
-</pre>
-
-<pre>
-int a = 1;
-@property (nonatomic, strong) UICollectionView       *collectionView;
-@property (nonatomic, strong) UILabel                *titleLabel;
-@property (nonatomic, strong) UIButton               *moreButton;
-@property (nonatomic, strong) UIView                 *seperateView;
-</pre>
-
-<pre class="sunlight-highlight-csharp">
-public object DoStuff() {
-    return new object();
-}
-</pre>
-
-
-<code class="hljs livecodeserver">{% highlight c %}
-/* hello world demo */
-#include <stdio.h>
-int main(int argc, char **argv)
-{
-    printf("Hello, World!\n");
-    return 0;
-}
-{% endhighlight %}</code>
-
-{% highlight objc %}
-#define kFocusImageHWScale 0.48
-@interface LMAttentionViewController () <LMAttentionHeaderViewDelegate>
-@property (nonatomic, strong) LMAttentionHeaderView *headerView;
-@property (nonatomic, strong) LMAttentionModel      *model;
-@end
-@implementation LMAttentionViewController
-#pragma mark - life cycle
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.view.backgroundColor = kLMColorF4F4F4;
-    self.title = @"关注";
-    _model = [[LMAttentionModel alloc] init];
-    [self addDefaultTableView];
-    [self addMJRefresh];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.tableHeaderView = self.headerView;
-    self.tableView.backgroundColor = kLMColorF4F4F4;
-    // 断网提示
-    if (self.networkStatus == AFNetworkReachabilityStatusNotReachable) {
-        [self showNetworkBar:0];
-    }
-    [self p_requestForData:LMListRequestTypeNew];
-}
-{% endhighlight %}
