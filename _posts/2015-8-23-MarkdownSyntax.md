@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Markdown Syntax Test"       # Title of the post
+title: "Markdown Syntax"       # Title of the post
 description: Some description       # Description of the post, used for Facebook Opengraph & Twitter
-headline: Markdown Syntax Test      # Will appear in bold letters on top of the post
+headline: Markdown Syntax      # Will appear in bold letters on top of the post
 modified: 2015-8-23                 # Date
 category: personal
 tags: []
@@ -47,7 +47,7 @@ Markdown: Syntax
 **Note:** This document is itself written using Markdown; you
 can [see the source for it by adding '.text' to the URL][src].
 
-  [src]: /blog/MarkdownSyntax.md
+  [src]: /blog/MarkdownSyntax
 
 * * *
 
