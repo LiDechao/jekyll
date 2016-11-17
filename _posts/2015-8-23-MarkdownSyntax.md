@@ -44,10 +44,7 @@ Markdown: Syntax
     *   [Automatic Links](#autolink)
 
 
-**Note:** This document is itself written using Markdown; you
-can [see the source for it by adding '.text' to the URL][src].
-
-  [src]: /blog/MarkdownSyntax
+**Note:** This document is itself written using Markdown.
 
 * * *
 
