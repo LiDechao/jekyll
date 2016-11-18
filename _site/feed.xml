@@ -1,0 +1,1706 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2016-11-17T22:28:57-05:00</updated><id>http://localhost:4000/</id><title type="html">Site Title</title><subtitle>Site description for the metas.</subtitle><author><name>Your Name</name><email>your@email.com</email></author><entry><title type="html">Markdown Syntax Test</title><link href="http://localhost:4000/blog/MarkdownTest" rel="alternate" type="text/html" title="Markdown Syntax Test" /><published>2015-08-23T00:00:00-04:00</published><updated>2015-08-23T00:00:00-04:00</updated><id>http://localhost:4000/blog/MarkdownTest</id><content type="html" xml:base="http://localhost:4000/blog/MarkdownTest">&lt;h1 id=&quot;just-for-test-markdown-syntax&quot;&gt;Just for test Markdown: Syntax&lt;/h1&gt;
+
+&lt;ul id=&quot;ProjectSubmenu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;/projects/markdown/&quot; title=&quot;Markdown Project Page&quot;&gt;Main&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/projects/markdown/basics&quot; title=&quot;Markdown Basics&quot;&gt;Basics&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;selected&quot; title=&quot;Markdown Syntax Documentation&quot;&gt;Syntax&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/projects/markdown/license&quot; title=&quot;Pricing and License Information&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/projects/markdown/dingus&quot; title=&quot;Online Markdown Web Form&quot;&gt;Dingus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#overview&quot;&gt;Overview&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#philosophy&quot;&gt;Philosophy&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#html&quot;&gt;Inline HTML&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#autoescape&quot;&gt;Automatic Escaping for Special Characters&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#block&quot;&gt;Block Elements&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#p&quot;&gt;Paragraphs and Line Breaks&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#header&quot;&gt;Headers&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blockquote&quot;&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#list&quot;&gt;Lists&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#precode&quot;&gt;Code Blocks&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#hr&quot;&gt;Horizontal Rules&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#span&quot;&gt;Span Elements&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#link&quot;&gt;Links&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#em&quot;&gt;Emphasis&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#code&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#img&quot;&gt;Images&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#misc&quot;&gt;Miscellaneous&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#backslash&quot;&gt;Backslash Escapes&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#autolink&quot;&gt;Automatic Links&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This document is itself written using Markdown; you
+can &lt;a href=&quot;/projects/markdown/syntax.text&quot;&gt;see the source for it by adding ‘.text’ to the URL&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
+
+&lt;h3 id=&quot;philosophy&quot;&gt;Philosophy&lt;/h3&gt;
+&lt;p&gt;I like it.
+Markdown is intended to be as easy-to-read and easy-to-write as is feasible.&lt;/p&gt;
+
+&lt;p&gt;Readability, however, is emphasized above all else. A Markdown-formatted
+document should be publishable as-is, as plain text, without looking
+like it’s been marked up with tags or formatting instructions. While
+Markdown’s syntax has been influenced by several existing text-to-HTML
+filters – including &lt;a href=&quot;http://docutils.sourceforge.net/mirror/setext.html&quot;&gt;Setext&lt;/a&gt;, &lt;a href=&quot;http://www.aaronsw.com/2002/atx/&quot;&gt;atx&lt;/a&gt;, &lt;a href=&quot;http://textism.com/tools/textile/&quot;&gt;Textile&lt;/a&gt;, &lt;a href=&quot;http://docutils.sourceforge.net/rst.html&quot;&gt;reStructuredText&lt;/a&gt;,
+&lt;a href=&quot;http://www.triptico.com/software/grutatxt.html&quot;&gt;Grutatext&lt;/a&gt;, and &lt;a href=&quot;http://ettext.taint.org/doc/&quot;&gt;EtText&lt;/a&gt; – the single biggest source of
+inspiration for Markdown’s syntax is the format of plain text email.&lt;/p&gt;
+
+&lt;p&gt;To this end, Markdown’s syntax is comprised entirely of punctuation
+characters, which punctuation characters have been carefully chosen so
+as to look like what they mean. E.g., asterisks around a word actually
+look like *emphasis*. Markdown lists look like, well, lists. Even
+blockquotes look like quoted passages of text, assuming you’ve ever
+used email.&lt;/p&gt;
+
+&lt;h3 id=&quot;html&quot;&gt;Inline HTML&lt;/h3&gt;
+
+&lt;p&gt;Markdown’s syntax is intended for one purpose: to be used as a
+format for &lt;em&gt;writing&lt;/em&gt; for the web.&lt;/p&gt;
+
+&lt;p&gt;Markdown is not a replacement for HTML, or even close to it. Its
+syntax is very small, corresponding only to a very small subset of
+HTML tags. The idea is &lt;em&gt;not&lt;/em&gt; to create a syntax that makes it easier
+to insert HTML tags. In my opinion, HTML tags are already easy to
+insert. The idea for Markdown is to make it easy to read, write, and
+edit prose. HTML is a &lt;em&gt;publishing&lt;/em&gt; format; Markdown is a &lt;em&gt;writing&lt;/em&gt;
+format. Thus, Markdown’s formatting syntax only addresses issues that
+can be conveyed in plain text.&lt;/p&gt;
+
+&lt;p&gt;For any markup that is not covered by Markdown’s syntax, you simply
+use HTML itself. There’s no need to preface it or delimit it to
+indicate that you’re switching from Markdown to HTML; you just use
+the tags.&lt;/p&gt;
+
+&lt;p&gt;The only restrictions are that block-level HTML elements – e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt;,
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;table&amp;gt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt;, etc. – must be separated from surrounding
+content by blank lines, and the start and end tags of the block should
+not be indented with tabs or spaces. Markdown is smart enough not
+to add extra (unwanted) &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags around HTML block-level tags.&lt;/p&gt;
+
+&lt;p&gt;For example, to add an HTML table to a Markdown article:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is a regular paragraph.
+
+&amp;lt;table&amp;gt;
+    &amp;lt;tr&amp;gt;
+        &amp;lt;td&amp;gt;Foo&amp;lt;/td&amp;gt;
+    &amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+
+This is another regular paragraph.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Note that Markdown formatting syntax is not processed within block-level
+HTML tags. E.g., you can’t use Markdown-style &lt;code class=&quot;highlighter-rouge&quot;&gt;*emphasis*&lt;/code&gt; inside an
+HTML block.&lt;/p&gt;
+
+&lt;p&gt;Span-level HTML tags – e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;span&amp;gt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;del&amp;gt;&lt;/code&gt; – can be
+used anywhere in a Markdown paragraph, list item, or header. If you
+want, you can even use HTML tags instead of Markdown formatting; e.g. if
+you’d prefer to use HTML &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;a&amp;gt;&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tags instead of Markdown’s
+link or image syntax, go right ahead.&lt;/p&gt;
+
+&lt;p&gt;Unlike block-level HTML tags, Markdown syntax &lt;em&gt;is&lt;/em&gt; processed within
+span-level tags.&lt;/p&gt;
+
+&lt;h3 id=&quot;autoescape&quot;&gt;Automatic Escaping for Special Characters&lt;/h3&gt;
+
+&lt;p&gt;In HTML, there are two characters that demand special treatment: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;
+and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;. Left angle brackets are used to start tags; ampersands are
+used to denote HTML entities. If you want to use them as literal
+characters, you must escape them as entities, e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;lt;&lt;/code&gt;, and
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;amp;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ampersands in particular are bedeviling for web writers. If you want to
+write about ‘AT&amp;amp;T’, you need to write ‘&lt;code class=&quot;highlighter-rouge&quot;&gt;AT&amp;amp;amp;T&lt;/code&gt;’. You even need to
+escape ampersands within URLs. Thus, if you want to link to:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://images.google.com/images?num=30&amp;amp;q=larry+bird
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;you need to encode the URL as:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://images.google.com/images?num=30&amp;amp;amp;q=larry+bird
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;in your anchor tag &lt;code class=&quot;highlighter-rouge&quot;&gt;href&lt;/code&gt; attribute. Needless to say, this is easy to
+forget, and is probably the single most common source of HTML validation
+errors in otherwise well-marked-up web sites.&lt;/p&gt;
+
+&lt;p&gt;Markdown allows you to use these characters naturally, taking care of
+all the necessary escaping for you. If you use an ampersand as part of
+an HTML entity, it remains unchanged; otherwise it will be translated
+into &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;amp;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, if you want to include a copyright symbol in your article, you can write:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;amp;copy;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;and Markdown will leave it alone. But if you write:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;AT&amp;amp;T
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Markdown will translate it to:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;AT&amp;amp;amp;T
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Similarly, because Markdown supports &lt;a href=&quot;#html&quot;&gt;inline HTML&lt;/a&gt;, if you use
+angle brackets as delimiters for HTML tags, Markdown will treat them as
+such. But if you write:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;4 &amp;lt; 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Markdown will translate it to:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;4 &amp;amp;lt; 5
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;However, inside Markdown code spans and blocks, angle brackets and
+ampersands are &lt;em&gt;always&lt;/em&gt; encoded automatically. This makes it easy to use
+Markdown to write about HTML code. (As opposed to raw HTML, which is a
+terrible format for writing about HTML syntax, because every single &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt;
+and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt; in your example code needs to be escaped.)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;block&quot;&gt;Block Elements&lt;/h2&gt;
+
+&lt;h3 id=&quot;p&quot;&gt;Paragraphs and Line Breaks&lt;/h3&gt;
+
+&lt;p&gt;A paragraph is simply one or more consecutive lines of text, separated
+by one or more blank lines. (A blank line is any line that looks like a
+blank line – a line containing nothing but spaces or tabs is considered
+blank.) Normal paragraphs should not be indented with spaces or tabs.&lt;/p&gt;
+
+&lt;p&gt;The implication of the “one or more consecutive lines of text” rule is
+that Markdown supports “hard-wrapped” text paragraphs. This differs
+significantly from most other text-to-HTML formatters (including Movable
+Type’s “Convert Line Breaks” option) which translate every line break
+character in a paragraph into a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br /&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+
+&lt;p&gt;When you &lt;em&gt;do&lt;/em&gt; want to insert a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br /&amp;gt;&lt;/code&gt; break tag using Markdown, you
+end a line with two or more spaces, then type return.&lt;/p&gt;
+
+&lt;p&gt;Yes, this takes a tad more effort to create a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;, but a simplistic
+“every line break is a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;” rule wouldn’t work for Markdown.
+Markdown’s email-style &lt;a href=&quot;#blockquote&quot;&gt;blockquoting&lt;/a&gt; and multi-paragraph &lt;a href=&quot;#list&quot;&gt;list items&lt;/a&gt;
+work best – and look better – when you format them with hard breaks.&lt;/p&gt;
+
+&lt;h3 id=&quot;header&quot;&gt;Headers&lt;/h3&gt;
+
+&lt;p&gt;Markdown supports two styles of headers, &lt;a href=&quot;http://docutils.sourceforge.net/mirror/setext.html&quot;&gt;Setext&lt;/a&gt; and &lt;a href=&quot;http://www.aaronsw.com/2002/atx/&quot;&gt;atx&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Setext-style headers are “underlined” using equal signs (for first-level
+headers) and dashes (for second-level headers). For example:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is an H1
+=============
+
+This is an H2
+-------------
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Any number of underlining &lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt;’s or &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;’s will work.&lt;/p&gt;
+
+&lt;p&gt;Atx-style headers use 1-6 hash characters at the start of the line,
+corresponding to header levels 1-6. For example:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# This is an H1
+
+## This is an H2
+
+###### This is an H6
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Optionally, you may “close” atx-style headers. This is purely
+cosmetic – you can use this if you think it looks better. The
+closing hashes don’t even need to match the number of hashes
+used to open the header. (The number of opening hashes
+determines the header level.) :&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# This is an H1 #
+
+## This is an H2 ##
+
+### This is an H3 ######
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;blockquote&quot;&gt;Blockquotes&lt;/h3&gt;
+
+&lt;p&gt;Markdown uses email-style &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; characters for blockquoting. If you’re
+familiar with quoting passages of text in an email message, then you
+know how to create a blockquote in Markdown. It looks best if you hard
+wrap the text and put a &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; before every line:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+&amp;gt; consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+&amp;gt; Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+&amp;gt; 
+&amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+&amp;gt; id sem consectetuer libero luctus adipiscing.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Markdown allows you to be lazy and only put the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; before the first
+line of a hard-wrapped paragraph:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+&amp;gt; Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
+adding additional levels of &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; This is the first level of quoting.
+&amp;gt;
+&amp;gt; &amp;gt; This is nested blockquote.
+&amp;gt;
+&amp;gt; Back to the first level.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Blockquotes can contain other Markdown elements, including headers, lists,
+and code blocks:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; ## This is a header.
+&amp;gt; 
+&amp;gt; 1.   This is the first list item.
+&amp;gt; 2.   This is the second list item.
+&amp;gt; 
+&amp;gt; Here's some example code:
+&amp;gt; 
+&amp;gt;     return shell_exec(&quot;echo $input | $markdown_script&quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Any decent text editor should make email-style quoting easy. For
+example, with BBEdit, you can make a selection and choose Increase
+Quote Level from the Text menu.&lt;/p&gt;
+
+&lt;h3 id=&quot;list&quot;&gt;Lists&lt;/h3&gt;
+
+&lt;p&gt;Markdown supports ordered (numbered) and unordered (bulleted) lists.&lt;/p&gt;
+
+&lt;p&gt;Unordered lists use asterisks, pluses, and hyphens – interchangably
+– as list markers:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*   Red
+*   Green
+*   Blue
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;is equivalent to:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;+   Red
++   Green
++   Blue
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;and:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-   Red
+-   Green
+-   Blue
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ordered lists use numbers followed by periods:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.  Bird
+2.  McHale
+3.  Parish
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It’s important to note that the actual numbers you use to mark the
+list have no effect on the HTML output Markdown produces. The HTML
+Markdown produces from the above list is:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;ol&amp;gt;
+&amp;lt;li&amp;gt;Bird&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;McHale&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Parish&amp;lt;/li&amp;gt;
+&amp;lt;/ol&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you instead wrote the list in Markdown like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.  Bird
+1.  McHale
+1.  Parish
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;or even:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;3. Bird
+1. McHale
+8. Parish
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;you’d get the exact same HTML output. The point is, if you want to,
+you can use ordinal numbers in your ordered Markdown lists, so that
+the numbers in your source match the numbers in your published HTML.
+But if you want to be lazy, you don’t have to.&lt;/p&gt;
+
+&lt;p&gt;If you do use lazy list numbering, however, you should still start the
+list with the number 1. At some point in the future, Markdown may support
+starting ordered lists at an arbitrary number.&lt;/p&gt;
+
+&lt;p&gt;List markers typically start at the left margin, but may be indented by
+up to three spaces. List markers must be followed by one or more spaces
+or a tab.&lt;/p&gt;
+
+&lt;p&gt;To make lists look nice, you can wrap items with hanging indents:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+    viverra nec, fringilla in, laoreet vitae, risus.
+*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+    Suspendisse id sem consectetuer libero luctus adipiscing.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But if you want to be lazy, you don’t have to:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.
+*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If list items are separated by blank lines, Markdown will wrap the
+items in &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tags in the HTML output. For example, this input:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*   Bird
+*   Magic
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;will turn into:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;Bird&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;Magic&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*   Bird
+
+*   Magic
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;will turn into:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;p&amp;gt;Bird&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;p&amp;gt;Magic&amp;lt;/p&amp;gt;&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;List items may consist of multiple paragraphs. Each subsequent
+paragraph in a list item must be indented by either 4 spaces
+or one tab:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.  This is a list item with two paragraphs. Lorem ipsum dolor
+    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+    mi posuere lectus.
+
+    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+    sit amet velit.
+
+2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It looks nice if you indent every line of the subsequent
+paragraphs, but here again, Markdown will allow you to be
+lazy:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*   This is a list item with two paragraphs.
+
+    This is the second paragraph in the list item. You're
+only required to indent the first line. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit.
+
+*   Another item in the same list.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To put a blockquote within a list item, the blockquote’s &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;
+delimiters need to be indented:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*   A list item with a blockquote:
+
+    &amp;gt; This is a blockquote
+    &amp;gt; inside a list item.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To put a code block within a list item, the code block needs
+to be indented &lt;em&gt;twice&lt;/em&gt; – 8 spaces or two tabs:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*   A list item with a code block:
+
+        &amp;lt;code goes here&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It’s worth noting that it’s possible to trigger an ordered list by
+accident, by writing something like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1986. What a great season.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In other words, a &lt;em&gt;number-period-space&lt;/em&gt; sequence at the beginning of a
+line. To avoid this, you can backslash-escape the period:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1986\. What a great season.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;precode&quot;&gt;Code Blocks&lt;/h3&gt;
+
+&lt;p&gt;Pre-formatted code blocks are used for writing about programming or
+markup source code. Rather than forming normal paragraphs, the lines
+of a code block are interpreted literally. Markdown wraps a code block
+in both &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+
+&lt;p&gt;To produce a code block in Markdown, simply indent every line of the
+block by at least 4 spaces or 1 tab. For example, given this input:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is a normal paragraph:
+
+    This is a code block.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Markdown will generate:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p&amp;gt;This is a normal paragraph:&amp;lt;/p&amp;gt;
+
+&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;This is a code block.
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;One level of indentation – 4 spaces or 1 tab – is removed from each
+line of the code block. For example, this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Here is an example of AppleScript:
+
+    tell application &quot;Foo&quot;
+        beep
+    end tell
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;will turn into:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p&amp;gt;Here is an example of AppleScript:&amp;lt;/p&amp;gt;
+
+&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;tell application &quot;Foo&quot;
+    beep
+end tell
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A code block continues until it reaches a line that is not indented
+(or the end of the article).&lt;/p&gt;
+
+&lt;p&gt;Within a code block, ampersands (&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;) and angle brackets (&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;)
+are automatically converted into HTML entities. This makes it very
+easy to include example HTML source code using Markdown – just paste
+it and indent it, and Markdown will handle the hassle of encoding the
+ampersands and angle brackets. For example, this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &amp;lt;div class=&quot;footer&quot;&amp;gt;
+        &amp;amp;copy; 2004 Foo Corporation
+    &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;will turn into:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;&amp;amp;lt;div class=&quot;footer&quot;&amp;amp;gt;
+    &amp;amp;amp;copy; 2004 Foo Corporation
+&amp;amp;lt;/div&amp;amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Regular Markdown syntax is not processed within code blocks. E.g.,
+asterisks are just literal asterisks within a code block. This means
+it’s also easy to use Markdown to write about Markdown’s own syntax.&lt;/p&gt;
+
+&lt;h3 id=&quot;hr&quot;&gt;Horizontal Rules&lt;/h3&gt;
+
+&lt;p&gt;You can produce a horizontal rule tag (&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;hr /&amp;gt;&lt;/code&gt;) by placing three or
+more hyphens, asterisks, or underscores on a line by themselves. If you
+wish, you may use spaces between the hyphens or asterisks. Each of the
+following lines will produce a horizontal rule:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;span&quot;&gt;Span Elements&lt;/h2&gt;
+
+&lt;h3 id=&quot;link&quot;&gt;Links&lt;/h3&gt;
+
+&lt;p&gt;Markdown supports two style of links: &lt;em&gt;inline&lt;/em&gt; and &lt;em&gt;reference&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;In both styles, the link text is delimited by [square brackets].&lt;/p&gt;
+
+&lt;p&gt;To create an inline link, use a set of regular parentheses immediately
+after the link text’s closing square bracket. Inside the parentheses,
+put the URL where you want the link to point, along with an &lt;em&gt;optional&lt;/em&gt;
+title for the link, surrounded in quotes. For example:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is [an example](http://example.com/ &quot;Title&quot;) inline link.
+
+[This link](http://example.net/) has no title attribute.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Will produce:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p&amp;gt;This is &amp;lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&amp;gt;
+an example&amp;lt;/a&amp;gt; inline link.&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;&amp;lt;a href=&quot;http://example.net/&quot;&amp;gt;This link&amp;lt;/a&amp;gt; has no
+title attribute.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you’re referring to a local resource on the same server, you can
+use relative paths:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;See my [About](/about/) page for details.   
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Reference-style links use a second set of square brackets, inside
+which you place a label of your choosing to identify the link:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is [an example][id] reference-style link.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can optionally use a space to separate the sets of brackets:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is [an example] [id] reference-style link.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then, anywhere in the document, you define your link label like this,
+on a line by itself:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[id]: http://example.com/  &quot;Optional Title Here&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;That is:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Square brackets containing the link identifier (optionally
+indented from the left margin using up to three spaces);&lt;/li&gt;
+  &lt;li&gt;followed by a colon;&lt;/li&gt;
+  &lt;li&gt;followed by one or more spaces (or tabs);&lt;/li&gt;
+  &lt;li&gt;followed by the URL for the link;&lt;/li&gt;
+  &lt;li&gt;optionally followed by a title attribute for the link, enclosed
+in double or single quotes, or enclosed in parentheses.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The following three link definitions are equivalent:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[foo]: http://example.com/  &quot;Optional Title Here&quot;
+[foo]: http://example.com/  'Optional Title Here'
+[foo]: http://example.com/  (Optional Title Here)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; There is a known bug in Markdown.pl 1.0.1 which prevents
+single quotes from being used to delimit link titles.&lt;/p&gt;
+
+&lt;p&gt;The link URL may, optionally, be surrounded by angle brackets:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[id]: &amp;lt;http://example.com/&amp;gt;  &quot;Optional Title Here&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can put the title attribute on the next line and use extra spaces
+or tabs for padding, which tends to look better with longer URLs:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[id]: http://example.com/longish/path/to/resource/here
+    &quot;Optional Title Here&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Link definitions are only used for creating links during Markdown
+processing, and are stripped from your document in the HTML output.&lt;/p&gt;
+
+&lt;p&gt;Link definition names may consist of letters, numbers, spaces, and
+punctuation – but they are &lt;em&gt;not&lt;/em&gt; case sensitive. E.g. these two
+links:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[link text][a]
+[link text][A]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;are equivalent.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;implicit link name&lt;/em&gt; shortcut allows you to omit the name of the
+link, in which case the link text itself is used as the name.
+Just use an empty set of square brackets – e.g., to link the word
+“Google” to the google.com web site, you could simply write:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google][]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And then define the link:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google]: http://google.com/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Because link names may contain spaces, this shortcut even works for
+multiple words in the link text:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Visit [Daring Fireball][] for more information.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And then define the link:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Daring Fireball]: http://daringfireball.net/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Link definitions can be placed anywhere in your Markdown document. I
+tend to put them immediately after each paragraph in which they’re
+used, but if you want, you can put them all at the end of your
+document, sort of like footnotes.&lt;/p&gt;
+
+&lt;p&gt;Here’s an example of reference links in action:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;I get 10 times more traffic from [Google] [1] than from
+[Yahoo] [2] or [MSN] [3].
+
+  [1]: http://google.com/        &quot;Google&quot;
+  [2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;
+  [3]: http://search.msn.com/    &quot;MSN Search&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Using the implicit link name shortcut, you could instead write:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;I get 10 times more traffic from [Google][] than from
+[Yahoo][] or [MSN][].
+
+  [google]: http://google.com/        &quot;Google&quot;
+  [yahoo]:  http://search.yahoo.com/  &quot;Yahoo Search&quot;
+  [msn]:    http://search.msn.com/    &quot;MSN Search&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Both of the above examples will produce the following HTML output:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p&amp;gt;I get 10 times more traffic from &amp;lt;a href=&quot;http://google.com/&quot;
+title=&quot;Google&quot;&amp;gt;Google&amp;lt;/a&amp;gt; than from
+&amp;lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&amp;gt;Yahoo&amp;lt;/a&amp;gt;
+or &amp;lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&amp;gt;MSN&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For comparison, here is the same paragraph written using
+Markdown’s inline link style:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;I get 10 times more traffic from [Google](http://google.com/ &quot;Google&quot;)
+than from [Yahoo](http://search.yahoo.com/ &quot;Yahoo Search&quot;) or
+[MSN](http://search.msn.com/ &quot;MSN Search&quot;).
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The point of reference-style links is not that they’re easier to
+write. The point is that with reference-style links, your document
+source is vastly more readable. Compare the above examples: using
+reference-style links, the paragraph itself is only 81 characters
+long; with inline-style links, it’s 176 characters; and as raw HTML,
+it’s 234 characters. In the raw HTML, there’s more markup than there
+is text.&lt;/p&gt;
+
+&lt;p&gt;With Markdown’s reference-style links, a source document much more
+closely resembles the final output, as rendered in a browser. By
+allowing you to move the markup-related metadata out of the paragraph,
+you can add links without interrupting the narrative flow of your
+prose.&lt;/p&gt;
+
+&lt;h3 id=&quot;em&quot;&gt;Emphasis&lt;/h3&gt;
+
+&lt;p&gt;Markdown treats asterisks (&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;) and underscores (&lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt;) as indicators of
+emphasis. Text wrapped with one &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt; will be wrapped with an
+HTML &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag; double &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;’s or &lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt;’s will be wrapped with an HTML
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag. E.g., this input:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;em&amp;gt;single asterisks&amp;lt;/em&amp;gt;
+
+&amp;lt;em&amp;gt;single underscores&amp;lt;/em&amp;gt;
+
+&amp;lt;strong&amp;gt;double asterisks&amp;lt;/strong&amp;gt;
+
+&amp;lt;strong&amp;gt;double underscores&amp;lt;/strong&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can use whichever style you prefer; the lone restriction is that
+the same character must be used to open and close an emphasis span.&lt;/p&gt;
+
+&lt;p&gt;Emphasis can be used in the middle of a word:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;un*frigging*believable
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But if you surround an &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt; with spaces, it’ll be treated as a
+literal asterisk or underscore.&lt;/p&gt;
+
+&lt;p&gt;To produce a literal asterisk or underscore at a position where it
+would otherwise be used as an emphasis delimiter, you can backslash
+escape it:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\*this text is surrounded by literal asterisks\*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;code&quot;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;To indicate a span of code, wrap it with backtick quotes (&lt;code class=&quot;highlighter-rouge&quot;&gt;`&lt;/code&gt;).
+Unlike a pre-formatted code block, a code span indicates code within a
+normal paragraph. For example:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Use the `printf()` function.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p&amp;gt;Use the &amp;lt;code&amp;gt;printf()&amp;lt;/code&amp;gt; function.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To include a literal backtick character within a code span, you can use
+multiple backticks as the opening and closing delimiters:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;``There is a literal backtick (`) here.``
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;which will produce this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;There is a literal backtick (`) here.&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The backtick delimiters surrounding a code span may include spaces –
+one after the opening, one before the closing. This allows you to place
+literal backtick characters at the beginning or end of a code span:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A single backtick in a code span: `` ` ``
+
+A backtick-delimited string in a code span: `` `foo` ``
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p&amp;gt;A single backtick in a code span: &amp;lt;code&amp;gt;`&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;A backtick-delimited string in a code span: &amp;lt;code&amp;gt;`foo`&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;With a code span, ampersands and angle brackets are encoded as HTML
+entities automatically, which makes it easy to include example HTML
+tags. Markdown will turn this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Please don't use any `&amp;lt;blink&amp;gt;` tags.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;into:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p&amp;gt;Please don't use any &amp;lt;code&amp;gt;&amp;amp;lt;blink&amp;amp;gt;&amp;lt;/code&amp;gt; tags.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can write this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;`&amp;amp;#8212;` is the decimal-encoded equivalent of `&amp;amp;mdash;`.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;to produce:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;code&amp;gt;&amp;amp;amp;#8212;&amp;lt;/code&amp;gt; is the decimal-encoded
+equivalent of &amp;lt;code&amp;gt;&amp;amp;amp;mdash;&amp;lt;/code&amp;gt;.&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;img&quot;&gt;Images&lt;/h3&gt;
+
+&lt;p&gt;Admittedly, it’s fairly difficult to devise a “natural” syntax for
+placing images into a plain text document format.&lt;/p&gt;
+
+&lt;p&gt;Markdown uses an image syntax that is intended to resemble the syntax
+for links, allowing for two styles: &lt;em&gt;inline&lt;/em&gt; and &lt;em&gt;reference&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Inline image syntax looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;That is:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An exclamation mark: &lt;code class=&quot;highlighter-rouge&quot;&gt;!&lt;/code&gt;;&lt;/li&gt;
+  &lt;li&gt;followed by a set of square brackets, containing the &lt;code class=&quot;highlighter-rouge&quot;&gt;alt&lt;/code&gt;
+attribute text for the image;&lt;/li&gt;
+  &lt;li&gt;followed by a set of parentheses, containing the URL or path to
+the image, and an optional &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; attribute enclosed in double
+or single quotes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Reference-style image syntax looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![Alt text][id]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Where “id” is the name of a defined image reference. Image references
+are defined using syntax identical to link references:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[id]: url/to/image  &quot;Optional title attribute&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As of this writing, Markdown has no syntax for specifying the
+dimensions of an image; if this is important to you, you can simply
+use regular HTML &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;misc&quot;&gt;Miscellaneous&lt;/h2&gt;
+
+&lt;h3 id=&quot;autolink&quot;&gt;Automatic Links&lt;/h3&gt;
+
+&lt;p&gt;Markdown supports a shortcut style for creating “automatic” links for URLs and email addresses: simply surround the URL or email address with angle brackets. What this means is that if you want to show the actual text of a URL or email address, and also have it be a clickable link, you can do this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;http://example.com/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Markdown will turn this into:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;a href=&quot;http://example.com/&quot;&amp;gt;http://example.com/&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Automatic links for email addresses work similarly, except that
+Markdown will also perform a bit of randomized decimal and hex
+entity-encoding to help obscure your address from address-harvesting
+spambots. For example, Markdown will turn this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;address@example.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;into something like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;a href=&quot;&amp;amp;#x6D;&amp;amp;#x61;i&amp;amp;#x6C;&amp;amp;#x74;&amp;amp;#x6F;:&amp;amp;#x61;&amp;amp;#x64;&amp;amp;#x64;&amp;amp;#x72;&amp;amp;#x65;
+&amp;amp;#115;&amp;amp;#115;&amp;amp;#64;&amp;amp;#101;&amp;amp;#120;&amp;amp;#x61;&amp;amp;#109;&amp;amp;#x70;&amp;amp;#x6C;e&amp;amp;#x2E;&amp;amp;#99;&amp;amp;#111;
+&amp;amp;#109;&quot;&amp;gt;&amp;amp;#x61;&amp;amp;#x64;&amp;amp;#x64;&amp;amp;#x72;&amp;amp;#x65;&amp;amp;#115;&amp;amp;#115;&amp;amp;#64;&amp;amp;#101;&amp;amp;#120;&amp;amp;#x61;
+&amp;amp;#109;&amp;amp;#x70;&amp;amp;#x6C;e&amp;amp;#x2E;&amp;amp;#99;&amp;amp;#111;&amp;amp;#109;&amp;lt;/a&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;which will render in a browser as a clickable link to “address@example.com”.&lt;/p&gt;
+
+&lt;p&gt;(This sort of entity-encoding trick will indeed fool many, if not
+most, address-harvesting bots, but it definitely won’t fool all of
+them. It’s better than nothing, but an address published in this way
+will probably eventually start receiving spam.)&lt;/p&gt;
+
+&lt;h3 id=&quot;backslash&quot;&gt;Backslash Escapes&lt;/h3&gt;
+
+&lt;p&gt;Markdown allows you to use backslash escapes to generate literal
+characters which would otherwise have special meaning in Markdown’s
+formatting syntax. For example, if you wanted to surround a word
+with literal asterisks (instead of an HTML &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag), you can use
+backslashes before the asterisks, like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\*literal asterisks\*
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Markdown provides backslash escapes for the following characters:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\   backslash
+`   backtick
+*   asterisk
+_   underscore
+{}  curly braces
+[]  square brackets
+()  parentheses
+#   hash mark
++	plus sign
+-	minus sign (hyphen)
+.   dot
+!   exclamation mark
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>Your Name</name><email>your@email.com</email></author><category term="personal" /><summary type="html">Just for test Markdown: Syntax</summary></entry><entry><title type="html">First Commit</title><link href="http://localhost:4000/blog/first-commit" rel="alternate" type="text/html" title="First Commit" /><published>2014-05-15T00:00:00-04:00</published><updated>2014-05-15T00:00:00-04:00</updated><id>http://localhost:4000/blog/first-commit</id><content type="html" xml:base="http://localhost:4000/blog/first-commit">&lt;blockquote&gt;
+  &lt;p&gt;&quot;The beginning is the most important part of the work.&quot;
+&lt;small&gt;&lt;cite title=&quot;Plato&quot;&gt;Plato&lt;/cite&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have been away from the blogging scene for quite a while now, suddenly today it dawned upon me that I need to start writing/posting again. My writing is a little bit rusty now, and I need to brush on that. Anyways, the moment I thought about blogging, Wordpress flashed in my mind. Well, I used Wordpress &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; in the past and it worked well for a while, then I had to face issues like high-traffic and high CPU load and unexpected spikes in my server. Well, those weren’t too much trouble, I would avoid fixing those bugs if I was busy, and sometimes I would leave the system untouched for 2 days straight and let the server admins frown and try to mitigate the outage (I had a pretty straight forward deal with my hosting provider, that no matter what, they can’t shut down my website). The PHP runtime errors weren’t a big deal, the hundreds of thousands of SQL database queries weren’t a trouble, sometimes the site would run a tad bit slower than average, but it was OK overall for me. A sample of the emails I would receive from my hosting provider is given below:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tickets@hostgator.com
+10/11/10
+
+to hmfaysal 
+Hello, 
+
+
+I apologize, but I was forced to suspend the script &quot;/home/hmfaysal/public_html/hmfaysal.com/index.php&quot; as it was causing a high load on the server, and due to it affecting all of the other accounts on the system, I was forced to take immediate action for the health of the server.g 
+
+I did notice that this was a Wordpress installation, and would recommend that you enable caching for it.
+
+Please note that if you already have caching enabled, you will need to take more action such as looking into any high use modules or plugins, and seeing if there are any updates, or possibly any that you can disable to reduce the load that your site causes. 
+
+If you reply back to this with your IP address (http://www.hostgator.com/ip.shtml) we will be more than happy to go ahead enable HTTP access for you, so that you can safely work on the script without it causing further issues. Please let me know how you would like to proceed.  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But the game was changed when my site got hacked. Wordpress is notorious in getting hacked. The PHP code libraries are huge, and while Automattic tries to keep it relatively clean and bug free, bugs do persist among the thousands of lines of codes and every once in a while a bug gets discovered by the code breakers. If the bug can be exploited in some way to gain access of the site, the code breakers tend to do some serious damage. While I wasn’t been exclusively targeted by such individuals, I was part of a victimized group who used the same version of Wordpress, and all of our sites got defaced by some mass defacing software. Although it didn’t do serious damage, as I have daily off-site backup, I became dubious about the Wordpress platform.&lt;/p&gt;
+
+&lt;p&gt;So, this time around, while I was still brainstorming for ideas and theme designs and what not, I decided to go back to Jekyll, or you may say, rather old school. Why not use plain static HTML files with some CSS styling and JS animations? Static sites are impossible to hack, as there are no codes needed to be run on the server. The only way a static site can be compromised if the code breakers have access to your FTP account. I have used Jekyll in the past during my college years. I was working as a Teaching Assistant in the Mathematics Dept, and I was supposed to post weekly course materials on the course website. The trouble was my Alma maters IT dept didn’t allow dynamic sites to run on the nodes, and I wasn’t going download the HTML files, edit them with Sublime text, and push them back onto the server every week. So I used Jekyll and GIT Version Control to do that for me. And it was so efficient that I would post materials daily instead of weekly. It was like love on first use. But Wordpress had lots of theme choices and for my personal site I decided to use Wordpress anyways disregarding the simpleness and speed static sites provided. After the takeover of my Wordpress powered blog happened, I turned to self written PHP sites and static sites completely. I have built a social network based on PHP for my peer group which is highly secure but when it comes down to speed it lags behind. So I built this site using Jekyll, a blog aware static site generator. I hope this site will perform as envisioned.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;This domain previously hosted a Wordpress blog. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Your Name</name><email>your@email.com</email></author><category term="blogging" /><category term="jekyll" /><summary type="html">&quot;The beginning is the most important part of the work.&quot;
+Plato</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000{&quot;feature&quot;=&gt;&quot;website-speed.jpg&quot;, &quot;credit&quot;=&gt;&quot;spreadeffect.com&quot;, &quot;creditlink&quot;=&gt;&quot;http://www.spreadeffect.com/blog/improve-website-speed/&quot;}" /></entry><entry><title type="html">ABOUT HMFAYSAL OMEGA</title><link href="http://localhost:4000/blog/about-hmfaysal-omega" rel="alternate" type="text/html" title="ABOUT HMFAYSAL OMEGA" /><published>2014-01-12T00:00:00-05:00</published><updated>2014-01-12T00:00:00-05:00</updated><id>http://localhost:4000/blog/about-hmfaysal-omega</id><content type="html" xml:base="http://localhost:4000/blog/about-hmfaysal-omega">&lt;p&gt;HMFAYSAL OMEGA is a minimalist, beautiful, responsive theme for Jekyll designed for engineers as well as writers who want their content to take front and center. This theme elegantly wraps each page and post with featured images complementing the content. HMFAYSAL OMEGA (named after the Greek Alphabet) complements Jekyll’s minimalist, content-first approach with gorgeous typography and subtle design elements.&lt;/p&gt;
+
+&lt;p&gt;Write well, write beautifully, write responsively!&lt;/p&gt;
+
+&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Features&lt;/h1&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#twitter-bootstrap-3&quot; id=&quot;markdown-toc-twitter-bootstrap-3&quot;&gt;Twitter Bootstrap 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#option-to-set-parallax-featured-image-that-wraps-your-post-in-header-and-footer&quot; id=&quot;markdown-toc-option-to-set-parallax-featured-image-that-wraps-your-post-in-header-and-footer&quot;&gt;Option to set Parallax featured image that wraps your post in header and footer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#variable-templates-for-articles-link-quotation-and-status-updates&quot; id=&quot;markdown-toc-variable-templates-for-articles-link-quotation-and-status-updates&quot;&gt;Variable templates for articles, link, quotation and status updates&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#responsive-images-and-magnific-popup-lightbox&quot; id=&quot;markdown-toc-responsive-images-and-magnific-popup-lightbox&quot;&gt;Responsive images and Magnific Popup Lightbox&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#plugin-freegithub-pages-deployment-ready&quot; id=&quot;markdown-toc-plugin-freegithub-pages-deployment-ready&quot;&gt;Plugin-free/Github Pages Deployment Ready&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#read-time-calculator-calculation-of-post-read-time-based-on-word-count&quot; id=&quot;markdown-toc-read-time-calculator-calculation-of-post-read-time-based-on-word-count&quot;&gt;Read time Calculator: Calculation of post read-time based on word count&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#simple-search-that-overlays-results-based-on-post-title&quot; id=&quot;markdown-toc-simple-search-that-overlays-results-based-on-post-title&quot;&gt;Simple search that overlays results based on post title&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#display-mathematical-equations-beautifully-via-mathjax&quot; id=&quot;markdown-toc-display-mathematical-equations-beautifully-via-mathjax&quot;&gt;Display mathematical equations beautifully via MathJax&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#css3-transitions-and-svg-graphics-for-better-performance&quot; id=&quot;markdown-toc-css3-transitions-and-svg-graphics-for-better-performance&quot;&gt;CSS3 transitions and SVG graphics for better performance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ability-to-turn-of-animations-in-configyml&quot; id=&quot;markdown-toc-ability-to-turn-of-animations-in-configyml&quot;&gt;Ability to turn of animations in _config.yml&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#readable-typography-to-make-your-words-shine&quot; id=&quot;markdown-toc-readable-typography-to-make-your-words-shine&quot;&gt;Readable typography to make your words shine&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#google-fonts&quot; id=&quot;markdown-toc-google-fonts&quot;&gt;Google Fonts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#other-features&quot; id=&quot;markdown-toc-other-features&quot;&gt;Other features&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#designed-by-an-electrical-engineer&quot; id=&quot;markdown-toc-designed-by-an-electrical-engineer&quot;&gt;Designed by an Electrical Engineer&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#questions&quot; id=&quot;markdown-toc-questions&quot;&gt;Questions?&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#requests&quot; id=&quot;markdown-toc-requests&quot;&gt;Requests?&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#license&quot; id=&quot;markdown-toc-license&quot;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;h2 id=&quot;twitter-bootstrap-3&quot;&gt;Twitter Bootstrap 3&lt;/h2&gt;
+
+&lt;p&gt;Based on the latest Bootstrap its easy to update and customize to your own needs. Plus the power of the mobile first front-end framework adds to faster and easier web development.&lt;/p&gt;
+
+&lt;p&gt;See the list of theme elements.&lt;/p&gt;
+
+&lt;h2 id=&quot;option-to-set-parallax-featured-image-that-wraps-your-post-in-header-and-footer&quot;&gt;Option to set Parallax featured image that wraps your post in header and footer&lt;/h2&gt;
+
+&lt;p&gt;I always thought an article should wrap up in the end. What better way to do it other than wrapping it around with pictures? As we all know, a picture is worth a thousand words. Why not put 500 of those in the header and the rest in the footer to help writers tell their story?&lt;/p&gt;
+
+&lt;h2 id=&quot;variable-templates-for-articles-link-quotation-and-status-updates&quot;&gt;Variable templates for articles, link, quotation and status updates&lt;/h2&gt;
+
+&lt;p&gt;HMFAYSAL OMEGA Theme employs &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;post.type&quot;&lt;/code&gt; to assign variable templates article entries, link posts, quotation and status updates. No other Jekyll theme offers this functionality. In the future, more &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;post.types&quot;&lt;/code&gt; will be included.&lt;/p&gt;
+
+&lt;h2 id=&quot;responsive-images-and-magnific-popup-lightbox&quot;&gt;Responsive images and Magnific Popup Lightbox&lt;/h2&gt;
+
+&lt;p&gt;This theme supports responsive images and uses a responsive lightbox to showcase larger images. Images also use CSS3 transitions to turn to B&amp;amp;W when not hovered.&lt;/p&gt;
+
+&lt;h2 id=&quot;plugin-freegithub-pages-deployment-ready&quot;&gt;Plugin-free/Github Pages Deployment Ready&lt;/h2&gt;
+
+&lt;p&gt;Although featuring a mind-boggling number of features, this theme has been coded in such a way that it can be compiled without the usage of any plugins whatsoever. You do not have to worry about compatibility. Its ready for deployment on the Github Pages immediately.&lt;/p&gt;
+
+&lt;h2 id=&quot;read-time-calculator-calculation-of-post-read-time-based-on-word-count&quot;&gt;Read time Calculator: Calculation of post read-time based on word count&lt;/h2&gt;
+
+&lt;p&gt;I have been enjoying Medium.com as of lately and I simply love their Estimated Reading Time (ERT) of an article feature. What it does, it takes the word count of an article and calculates the ERT based on the average reading speed (ARS). While ARS is simply an estimation and it differs from person-to-person, Medium uses 180 Words-Per-Minute (WPM) as their ARS. I figured out that ARS in general is around 200 WPM. You can turn on or off this feature in the _config.yml file. Very recommended to use this feature as it increases user engagement.&lt;/p&gt;
+
+&lt;h2 id=&quot;simple-search-that-overlays-results-based-on-post-title&quot;&gt;Simple search that overlays results based on post title&lt;/h2&gt;
+
+&lt;p&gt;HMFAYSAL OMEGA Theme provides search using Christian Fei’s &lt;a href=&quot;https://github.com/christian-fei/Simple-Jekyll-Search&quot;&gt;Simple Jekyll jQuery plugin&lt;/a&gt; if you choose to enable search functionality in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file. Clicking search will trigger a fullscreen overlay that searches post titles’ using an autogenerated JSON file.&lt;/p&gt;
+
+&lt;h2 id=&quot;display-mathematical-equations-beautifully-via-mathjax&quot;&gt;Display mathematical equations beautifully via MathJax&lt;/h2&gt;
+
+&lt;p&gt;Both inline and displayed equations can be rendered via MathJax. HMFAYSAL OMEGA Theme supports MathJax natively.&lt;/p&gt;
+
+&lt;h2 id=&quot;css3-transitions-and-svg-graphics-for-better-performance&quot;&gt;CSS3 transitions and SVG graphics for better performance&lt;/h2&gt;
+
+&lt;p&gt;This theme uses subtle CSS3 transitions and SVG to showcase subtle animations for viewer pleasure. This ensures that optimal performance is guaranteed during page viewing.&lt;/p&gt;
+
+&lt;h2 id=&quot;ability-to-turn-of-animations-in-configyml&quot;&gt;Ability to turn of animations in _config.yml&lt;/h2&gt;
+
+&lt;p&gt;HMFAYSAL OMEGA Theme avoids Javascript animations to increase website performance. But if you are still facing some lag in your test device, you can turn off the animations in the _config.yml file.&lt;/p&gt;
+
+&lt;h2 id=&quot;readable-typography-to-make-your-words-shine&quot;&gt;Readable typography to make your words shine&lt;/h2&gt;
+
+&lt;p&gt;HMFAYSAL OMEGA Theme is a minimal, simple and responsive Jekyll theme built for maximum readability. The main design focus of HMFAYSAL OMEGA Theme is the typography and the clean design.&lt;/p&gt;
+
+&lt;h2 id=&quot;google-fonts&quot;&gt;Google Fonts&lt;/h2&gt;
+
+&lt;p&gt;This theme uses Google Webfonts instead of Adobe Edgefonts for performance.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-features&quot;&gt;Other features&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Disqus comments if you choose to enable.&lt;/li&gt;
+  &lt;li&gt;Simple and clear permalink structure&lt;/li&gt;
+  &lt;li&gt;Footer Menu&lt;/li&gt;
+  &lt;li&gt;361 Fontawesome icons&lt;/li&gt;
+  &lt;li&gt;Tags for &lt;a href=&quot;https://developers.facebook.com/docs/opengraph/&quot;&gt;Open Graph&lt;/a&gt; and &lt;a href=&quot;https://dev.twitter.com/docs/cards&quot;&gt;Twitter Cards&lt;/a&gt; for a better social sharing experience&lt;/li&gt;
+  &lt;li&gt;Beautifully crafted &lt;a href=&quot;http://localhost:4000/404.html&quot;&gt;404 page&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Custom &lt;a href=&quot;http://localhost:4000/categories/&quot;&gt;categories&lt;/a&gt; and &lt;a href=&quot;http://localhost:4000/tags/&quot;&gt;tags&lt;/a&gt; pages for viewers pleasure&lt;/li&gt;
+  &lt;li&gt;Stylesheets for Pygments and Coderay to make your code examples look snazzy.&lt;/li&gt;
+  &lt;li&gt;Sitemap for search engines&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;designed-by-an-electrical-engineer&quot;&gt;Designed by an Electrical Engineer&lt;/h2&gt;
+
+&lt;p&gt;HMFAYSAL OMEGA Theme was designed by Hossain Mohd Faysal – an Electrical Engineer. I have to confess I am not a designer. So when you download this theme, you have to know you are not getting the best designed elements out there, but instead what you are getting is extremely clean code even though the site uses some highly complex liquid logic expressions.&lt;/p&gt;
+
+&lt;h3 id=&quot;questions&quot;&gt;Questions?&lt;/h3&gt;
+
+&lt;p&gt;Having a problem getting something to work or want to know why I setup something in a certain way? Read the &lt;a href=&quot;http://localhost:4000/documentation/&quot;&gt;theme documentation&lt;/a&gt; or ping me on Twitter &lt;a href=&quot;http://twitter.com/hmfaysal&quot;&gt;@hmfaysal&lt;/a&gt; or &lt;a href=&quot;https://github.com/hmfaysal/hmfaysal-omega-theme/issues/new&quot;&gt;file a GitHub Issue&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;requests&quot;&gt;Requests?&lt;/h3&gt;
+
+&lt;p&gt;If you have some specific requests for this theme, or if you need help custom coding some elements, message me on Twitter &lt;a href=&quot;http://twitter.com/hmfaysal&quot;&gt;@hmfaysal&lt;/a&gt; or email me at &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#104;&amp;#109;&amp;#102;&amp;#097;&amp;#121;&amp;#115;&amp;#097;&amp;#108;&amp;#064;&amp;#097;&amp;#108;&amp;#117;&amp;#109;&amp;#046;&amp;#109;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#104;&amp;#109;&amp;#102;&amp;#097;&amp;#121;&amp;#115;&amp;#097;&amp;#108;&amp;#064;&amp;#097;&amp;#108;&amp;#117;&amp;#109;&amp;#046;&amp;#109;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;This theme is free and open source software, distributed under the &lt;a href=&quot;http://localhost:4000/license/&quot;&gt;The MIT License&lt;/a&gt;. So feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.&lt;/p&gt;
+
+&lt;p&gt;If you’d like to give me credit somewhere on your blog or tweet a shout out to &lt;a href=&quot;https://twitter.com/hmfaysal&quot;&gt;@hmfaysal&lt;/a&gt;, that would be pretty sweet.&lt;/p&gt;</content><author><name>Your Name</name><email>your@email.com</email></author><category term="Theme-Setup" /><category term="Jekyll" /><category term="HMFAYSAL OMEGA" /><category term="Features" /><summary type="html">HMFAYSAL OMEGA is a minimalist, beautiful, responsive theme for Jekyll designed for engineers as well as writers who want their content to take front and center. This theme elegantly wraps each page and post with featured images complementing the content. HMFAYSAL OMEGA (named after the Greek Alphabet) complements Jekyll’s minimalist, content-first approach with gorgeous typography and subtle design elements.</summary></entry><entry><title type="html">Sample Status Post</title><link href="http://localhost:4000/blog/a-status" rel="alternate" type="text/html" title="Sample Status Post" /><published>2014-01-11T00:00:00-05:00</published><updated>2014-01-11T00:00:00-05:00</updated><id>http://localhost:4000/blog/a-status</id><content type="html" xml:base="http://localhost:4000/blog/a-status">&lt;p&gt;Oh Hello. This is a status post. Click here to learn about it more :-)&lt;/p&gt;
+
+&lt;p&gt;Don’t worry, you can enter additional details about your status update. Only the first paragraph &lt;code class=&quot;highlighter-rouge&quot;&gt;[p:first-child]&lt;/code&gt; will be shown in the home page :-)&lt;/p&gt;
+
+&lt;p&gt;To start a status post, simply run &lt;code class=&quot;highlighter-rouge&quot;&gt;rake newstatus['Some Status Title']&lt;/code&gt; in the command line. Or if you want to create the post by yourself, make sure your post contains the following contents in your post’s Front Matter YAML:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: post
+type: status
+title: &quot;Sample Status Title&quot;
+description: 
+headline: 
+modified: YYYY-MM-DD
+category: status
+image: 
+  feature: 
+comments: true
+mathjax: 
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>Your Name</name><email>your@email.com</email></author><category term="Sample-Posts" /><category term="sample post" /><category term="status" /><summary type="html">Oh Hello. This is a status post. Click here to learn about it more :-)</summary></entry><entry><title type="html">Theme Elements</title><link href="http://localhost:4000/blog/theme-elements" rel="alternate" type="text/html" title="Theme Elements" /><published>2014-01-10T00:00:00-05:00</published><updated>2014-01-10T00:00:00-05:00</updated><id>http://localhost:4000/blog/theme-elements</id><content type="html" xml:base="http://localhost:4000/blog/theme-elements">&lt;p&gt;I’ve put together a little post to introduce you to the HMFAYSAL OMEGA theme and get you started with Markdown. Go ahead and edit this post to get going and learn how it all works!&lt;/p&gt;
+
+&lt;section&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Elements&lt;/h1&gt;
+  &lt;/header&gt;
+&lt;div id=&quot;drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#elements&quot; id=&quot;markdown-toc-elements&quot;&gt;ELEMENTS&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#lists&quot; id=&quot;markdown-toc-lists&quot;&gt;LISTS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#links&quot; id=&quot;markdown-toc-links&quot;&gt;LINKS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#what-about-images&quot; id=&quot;markdown-toc-what-about-images&quot;&gt;WHAT ABOUT IMAGES?&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#and-videos&quot; id=&quot;markdown-toc-and-videos&quot;&gt;AND VIDEOS?&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#equations&quot; id=&quot;markdown-toc-equations&quot;&gt;EQUATIONS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-logo&quot; id=&quot;markdown-toc-the-logo&quot;&gt;THE LOGO&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#icons&quot; id=&quot;markdown-toc-icons&quot;&gt;ICONS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#quoting&quot; id=&quot;markdown-toc-quoting&quot;&gt;QUOTING&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#working-with-code&quot; id=&quot;markdown-toc-working-with-code&quot;&gt;WORKING WITH CODE&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ready-for-a-break&quot; id=&quot;markdown-toc-ready-for-a-break&quot;&gt;READY FOR A BREAK?&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#fancy-some-columns&quot; id=&quot;markdown-toc-fancy-some-columns&quot;&gt;FANCY SOME COLUMNS?&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#buttons&quot; id=&quot;markdown-toc-buttons&quot;&gt;BUTTONS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#advanced-usage&quot; id=&quot;markdown-toc-advanced-usage&quot;&gt;ADVANCED USAGE&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;h1 id=&quot;elements&quot;&gt;ELEMENTS&lt;/h1&gt;
+
+&lt;p&gt;Writing in markdown is really easy. In any editor like notepad, you simply write as you normally would. Where appropriate, you can use formatting shortcuts to style your content.&lt;/p&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;LISTS&lt;/h2&gt;
+
+&lt;p&gt;For example, a list:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Item number one&lt;/li&gt;
+  &lt;li&gt;Item number two
+    &lt;ul&gt;
+      &lt;li&gt;A nested item&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A final item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;or with numbers!&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Remember to buy some milk&lt;/li&gt;
+  &lt;li&gt;Drink the milk&lt;/li&gt;
+  &lt;li&gt;Tweet that I remembered to buy the milk, and drank it&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;LINKS&lt;/h2&gt;
+
+&lt;p&gt;Want to link to a source? No problem. If you put the url in this format, like &lt;code class=&quot;highlighter-rouge&quot;&gt;[http://alum.mit.edu/www/hmfaysal](http://alum.mit.edu/www/hmfaysal)&lt;/code&gt; - it’ll automatically be linked up like &lt;a href=&quot;http://alum.mit.edu/www/hmfaysal&quot;&gt;http://alum.mit.edu/www/hmfaysal&lt;/a&gt;. But if you want to customize your anchor text, you can do that too! Here’s a link to the &lt;a href=&quot;http://alum.mit.edu/www/hmfaysal&quot; title=&quot;HMFAYSAL's Blog&quot;&gt;my website&lt;/a&gt;. Neat.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-about-images&quot;&gt;WHAT ABOUT IMAGES?&lt;/h2&gt;
+
+&lt;p&gt;Images work too! And they are responsive! Already know the URL of the image you want to include in your article? Images are responsive and uses lightbox.&lt;/p&gt;
+
+&lt;figure&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (16).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (16).jpg&quot; /&gt;&lt;/a&gt;
+&lt;/figure&gt;
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (14).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (13).jpg&quot; /&gt;&lt;/a&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (20).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (19).jpg&quot; /&gt;&lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Check out &lt;a href=&quot;http://localhost:4000/articles/sample-post-images/&quot;&gt;this post&lt;/a&gt; to learn about including images in your post.&lt;/p&gt;
+
+&lt;h2 id=&quot;and-videos&quot;&gt;AND VIDEOS?&lt;/h2&gt;
+
+&lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&quot;http://fitvidsjs.com/&quot;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;equations&quot;&gt;EQUATIONS&lt;/h2&gt;
+
+&lt;p&gt;Are you an engineer? Or a mathematician? Want to post some equations in your Jekyll blog for the world to see? No problem. HMFAYSAL OMEGA has MathJax built in to beautifully render your equations in the browser. To use MathJax simply turn on the MathJax feature by declaring in the Front YAML Matter like &lt;code class=&quot;highlighter-rouge&quot;&gt;mathjax: true&lt;/code&gt;, then wrapping your equation between &lt;code class=&quot;highlighter-rouge&quot;&gt;$$...$$&lt;/code&gt; will produce something like this:&lt;/p&gt;
+
+&lt;math display=&quot;block&quot;&gt;
+  &lt;mstyle&gt;
+    &lt;mi&gt;f&lt;/mi&gt;
+    &lt;mrow&gt;
+      &lt;mo&gt;(&lt;/mo&gt;
+      &lt;mi&gt;a&lt;/mi&gt;
+      &lt;mo&gt;)&lt;/mo&gt;
+    &lt;/mrow&gt;
+    &lt;mo&gt;=&lt;/mo&gt;
+ &lt;mfrac&gt;
+        &lt;mn&gt;1&lt;/mn&gt;
+        &lt;mrow&gt;
+          &lt;mn&gt;2&lt;/mn&gt;
+          &lt;mi&gt;π&lt;!-- π --&gt;&lt;/mi&gt;
+          &lt;mi&gt;i&lt;/mi&gt;
+        &lt;/mrow&gt;
+      &lt;/mfrac&gt;
+    &lt;msub&gt;
+      &lt;mo&gt;∮&lt;/mo&gt;
+      &lt;mrow&gt;
+        &lt;mi&gt;γ&lt;/mi&gt;
+      &lt;/mrow&gt;
+    &lt;/msub&gt;
+    &lt;mfrac&gt;
+      &lt;mrow&gt;
+        &lt;mi&gt;f&lt;/mi&gt;
+        &lt;mo&gt;(&lt;/mo&gt;
+        &lt;mi&gt;z&lt;/mi&gt;
+        &lt;mo&gt;)&lt;/mo&gt;
+      &lt;/mrow&gt;
+      &lt;mrow&gt;
+        &lt;mi&gt;z&lt;/mi&gt;
+        &lt;mo&gt;−&lt;/mo&gt;
+        &lt;mi&gt;a&lt;/mi&gt;
+      &lt;/mrow&gt;
+    &lt;/mfrac&gt;
+    &lt;mi&gt;d&lt;/mi&gt;
+    &lt;mi&gt;z&lt;/mi&gt;
+  &lt;/mstyle&gt;
+&lt;/math&gt;
+
+&lt;h2 id=&quot;the-logo&quot;&gt;THE LOGO&lt;/h2&gt;
+
+&lt;p&gt;Not sure which image you want to use yet? That’s ok too. Leave yourself a descriptive placeholder and keep writing. Come back later and change the image in the _config.yml.&lt;/p&gt;
+
+&lt;h2 id=&quot;icons&quot;&gt;ICONS&lt;/h2&gt;
+
+&lt;p&gt;This theme includes over 360 fontawesome icons. To use an icon go to &lt;a href=&quot;http://fontawesome.io/3.2.1/icons/&quot;&gt;Fontawesome&lt;/a&gt; website and click on the desired icon to find the appropriate tag.&lt;/p&gt;
+
+&lt;div class=&quot;text-center&quot;&gt;
+&lt;i class=&quot;icon-cogs&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-youtube-sign&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-thumbs-up&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-coffee&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-cloud-upload&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-camera&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-comments-alt&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-eye-open&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-heart&quot;&gt;&lt;/i&gt; &lt;i class=&quot;icon-globe&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;quoting&quot;&gt;QUOTING&lt;/h2&gt;
+
+&lt;p&gt;Sometimes a link isn’t enough, you want to quote someone on what they’ve said. It was probably very wisdomous. Is wisdomous a word? Find out in a future release when I introduce spellcheck! For now - it’s definitely a word.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Wisdomous - it’s definitely a word.
+&lt;small&gt;&lt;cite title=&quot;Hossain Mohd Faysal&quot;&gt;Hossain Mohd Faysal&lt;/cite&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;working-with-code&quot;&gt;WORKING WITH CODE&lt;/h2&gt;
+
+&lt;p&gt;Got a streak of geek? We’ve got you covered there, too. You can write inline &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; blocks really easily with back ticks. Want to show off something more comprehensive? 4 spaces of indentation gets you there.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.awesome-thing&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Learn more about syntax highlighting &lt;a href=&quot;http://localhost:4000/articles/code-highlighting-post/&quot;&gt;in this post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ready-for-a-break&quot;&gt;READY FOR A BREAK?&lt;/h2&gt;
+
+&lt;p&gt;Throw 4 or more dashes down on any new line and you’ve got yourself a fancy new divider. Aw yeah.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;fancy-some-columns&quot;&gt;FANCY SOME COLUMNS?&lt;/h2&gt;
+
+&lt;div class=&quot;col-md-6&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-6&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;col-md-4&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-4&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-4&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;For more column combinations, visit &lt;a href=&quot;http://localhost:4000/personal/fancy-columns/&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;buttons&quot;&gt;BUTTONS&lt;/h2&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-danger btn-large&quot;&gt;Some danger button&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-info btn-large&quot;&gt;Some info button&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-warning btn-large&quot;&gt;Some warning button&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-success btn-large&quot;&gt;Some success button&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;btn btn-primary btn-large&quot;&gt;Some primary button&lt;/a&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;advanced-usage&quot;&gt;ADVANCED USAGE&lt;/h2&gt;
+
+&lt;p&gt;There’s one fantastic secret about Markdown. If you want, you can write plain old HTML and it’ll still work! Very flexible.&lt;/p&gt;
+
+&lt;p&gt;&lt;input type=&quot;text&quot; placeholder=&quot;I'm an input field!&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That should be enough to get you started. Have fun - and let me know what you think &lt;a href=&quot;https://twitter.com/hmfaysal&quot;&gt;@hmfaysal&lt;/a&gt; or at &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#104;&amp;#109;&amp;#102;&amp;#097;&amp;#121;&amp;#115;&amp;#097;&amp;#108;&amp;#064;&amp;#097;&amp;#108;&amp;#117;&amp;#109;&amp;#046;&amp;#109;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&quot;&gt;&amp;#104;&amp;#109;&amp;#102;&amp;#097;&amp;#121;&amp;#115;&amp;#097;&amp;#108;&amp;#064;&amp;#097;&amp;#108;&amp;#117;&amp;#109;&amp;#046;&amp;#109;&amp;#105;&amp;#116;&amp;#046;&amp;#101;&amp;#100;&amp;#117;&lt;/a&gt; :)&lt;/p&gt;</content><author><name>Your Name</name><email>your@email.com</email></author><category term="Theme-Setup" /><category term="Jekyll" /><category term="HMFAYSAL OMEGA" /><summary type="html">I’ve put together a little post to introduce you to the HMFAYSAL OMEGA theme and get you started with Markdown. Go ahead and edit this post to get going and learn how it all works!</summary></entry><entry><title type="html">Sample Gallery Post</title><link href="http://localhost:4000/blog/sample-gallery-post" rel="alternate" type="text/html" title="Sample Gallery Post" /><published>2014-01-09T00:00:00-05:00</published><updated>2014-01-09T00:00:00-05:00</updated><id>http://localhost:4000/blog/sample-gallery-post</id><content type="html" xml:base="http://localhost:4000/blog/sample-gallery-post">&lt;p&gt;Here is an example of what a post with a gallery might look like. If you want to display two or three images next to each other responsively use &lt;code class=&quot;highlighter-rouge&quot;&gt;figure&lt;/code&gt; with the appropriate &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt;. Each instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;figure&lt;/code&gt; is auto-numbered and displayed in the caption.&lt;/p&gt;
+
+&lt;figure class=&quot;third&quot;&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (4).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (3).jpg&quot; /&gt;&lt;/a&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (18).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (17).jpg&quot; /&gt;&lt;/a&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (10).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (9).jpg&quot; /&gt;&lt;/a&gt;
+&lt;/figure&gt;
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (6).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (5).jpg&quot; /&gt;&lt;/a&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (12).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (11).jpg&quot; /&gt;&lt;/a&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (16).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (16).jpg&quot; /&gt;&lt;/a&gt;
+&lt;/figure&gt;
+&lt;figure class=&quot;half&quot;&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (14).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (13).jpg&quot; /&gt;&lt;/a&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (20).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (19).jpg&quot; /&gt;&lt;/a&gt;
+&lt;/figure&gt;
+&lt;figure class=&quot;third&quot;&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (22).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (21).jpg&quot; /&gt;&lt;/a&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (24).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (23).jpg&quot; /&gt;&lt;/a&gt;
+	&lt;a href=&quot;http://localhost:4000/images/gallery1/photo (74).jpg&quot;&gt;&lt;img src=&quot;http://localhost:4000/images/gallery1/photo (73).jpg&quot; /&gt;&lt;/a&gt;
+	&lt;figcaption&gt;Photos from my Japan trip.&lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name>Your Name</name><email>your@email.com</email></author><category term="photos" /><category term="sample post" /><category term="images" /><category term="gallery" /><category term="test" /><summary type="html">Here is an example of what a post with a gallery might look like. If you want to display two or three images next to each other responsively use figure with the appropriate class. Each instance of figure is auto-numbered and displayed in the caption.</summary></entry><entry><title type="html">Sample Quotation Post</title><link href="http://localhost:4000/blog/a-quotation" rel="alternate" type="text/html" title="Sample Quotation Post" /><published>2014-01-08T00:00:00-05:00</published><updated>2014-01-08T00:00:00-05:00</updated><id>http://localhost:4000/blog/a-quotation</id><content type="html" xml:base="http://localhost:4000/blog/a-quotation">&lt;blockquote&gt;
+  &lt;p&gt;&quot;Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius - and a lot of courage - to move in the opposite direction.&quot;
+&lt;small&gt;&lt;cite title=&quot;Albert Einstein&quot;&gt;Albert Einstein&lt;/cite&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;HMFAYSAL OMEGA theme now supports Quotation posting, made famous by some premium WordPress themes. To make a quotation post, specify the post type as quote in the Front Matter YAML. So the Front Matter YAML should look like something like the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: post
+type: quote
+title: &quot;Sample Quotation Post&quot;
+description: 
+headline: 
+modified: YYYY-MM-DD
+category: quote
+image: 
+  feature: 
+comments: true
+mathjax: 
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Or you can simply run the rake task command &lt;code class=&quot;highlighter-rouge&quot;&gt;rake newquote[&quot;Some Quotation Title&quot;]&lt;/code&gt; to generate a skeleton quotation post. Include the intended quotation in Markdown format in your post. A sample quotation in markdown looks like the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; &quot;The Quotation Goes here&quot;
+&amp;gt; &amp;lt;small&amp;gt;&amp;lt;cite title=&quot;Name of the Person&quot;&amp;gt;Person&amp;lt;/cite&amp;gt;&amp;lt;/small&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can add additional details about the quotation in the post. Just make sure the posted quotation goes first in the post, meaning it is the first paragraph of the post. Additional paragraphs can only be seen in the post page. You can also assign a featured image for the post page in the post’s Front Matter YAML.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Albert Einstein was born at Ulm, in Württemberg, Germany, on March 14, 1879. Six weeks later the family moved to Munich, where he later on began his schooling at the Luitpold Gymnasium. Later, they moved to Italy and Albert continued his education at Aarau, Switzerland and in 1896 he entered the Swiss Federal Polytechnic School in Zurich to be trained as a teacher in physics and mathematics. In 1901, the year he gained his diploma, he acquired Swiss citizenship and, as he was unable to find a teaching post, he accepted a position as technical assistant in the Swiss Patent Office. In 1905 he obtained his doctor’s degree.&lt;/p&gt;
+
+&lt;p&gt;During his stay at the Patent Office, and in his spare time, he produced much of his remarkable work and in 1908 he was appointed Privatdozent in Berne. In 1909 he became Professor Extraordinary at Zurich, in 1911 Professor of Theoretical Physics at Prague, returning to Zurich in the following year to fill a similar post. In 1914 he was appointed Director of the Kaiser Wilhelm Physical Institute and Professor in the University of Berlin. He became a German citizen in 1914 and remained in Berlin until 1933 when he renounced his citizenship for political reasons and emigrated to America to take the position of Professor of Theoretical Physics at Princeton*. He became a United States citizen in 1940 and retired from his post in 1945.&lt;/p&gt;
+
+&lt;p&gt;After World War II, Einstein was a leading figure in the World Government Movement, he was offered the Presidency of the State of Israel, which he declined, and he collaborated with Dr. Chaim Weizmann in establishing the Hebrew University of Jerusalem.&lt;/p&gt;
+
+&lt;p&gt;Einstein always appeared to have a clear view of the problems of physics and the determination to solve them. He had a strategy of his own and was able to visualize the main stages on the way to his goal. He regarded his major achievements as mere stepping-stones for the next advance.&lt;/p&gt;
+
+&lt;p&gt;At the start of his scientific work, Einstein realized the inadequacies of Newtonian mechanics and his special theory of relativity stemmed from an attempt to reconcile the laws of mechanics with the laws of the electromagnetic field. He dealt with classical problems of statistical mechanics and problems in which they were merged with quantum theory: this led to an explanation of the Brownian movement of molecules. He investigated the thermal properties of light with a low radiation density and his observations laid the foundation of the photon theory of light.&lt;/p&gt;
+
+&lt;p&gt;In his early days in Berlin, Einstein postulated that the correct interpretation of the special theory of relativity must also furnish a theory of gravitation and in 1916 he published his paper on the general theory of relativity. During this time he also contributed to the problems of the theory of radiation and statistical mechanics.&lt;/p&gt;
+
+&lt;p&gt;In the 1920’s, Einstein embarked on the construction of unified field theories, although he continued to work on the probabilistic interpretation of quantum theory, and he persevered with this work in America. He contributed to statistical mechanics by his development of the quantum theory of a monatomic gas and he has also accomplished valuable work in connection with atomic transition probabilities and relativistic cosmology.&lt;/p&gt;
+
+&lt;p&gt;After his retirement he continued to work towards the unification of the basic concepts of physics, taking the opposite approach, geometrisation, to the majority of physicists.&lt;/p&gt;
+
+&lt;p&gt;Einstein’s researches are, of course, well chronicled and his more important works include Special Theory of Relativity (1905), Relativity (English translations, 1920 and 1950), General Theory of Relativity (1916), Investigations on Theory of Brownian Movement (1926), and The Evolution of Physics (1938). Among his non-scientific works, About Zionism (1930), Why War? (1933), My Philosophy (1934), and Out of My Later Years (1950) are perhaps the most important.&lt;/p&gt;
+
+&lt;p&gt;Albert Einstein received honorary doctorate degrees in science, medicine and philosophy from many European and American universities. During the 1920’s he lectured in Europe, America and the Far East, and he was awarded Fellowships or Memberships of all the leading scientific academies throughout the world. He gained numerous awards in recognition of his work, including the Copley Medal of the Royal Society of London in 1925, and the Franklin Medal of the Franklin Institute in 1935.&lt;/p&gt;
+
+&lt;p&gt;Einstein’s gifts inevitably resulted in his dwelling much in intellectual solitude and, for relaxation, music played an important part in his life. He married Mileva Maric in 1903 and they had a daughter and two sons; their marriage was dissolved in 1919 and in the same year he married his cousin, Elsa Löwenthal, who died in 1936. He died on April 18, 1955 at Princeton, New Jersey.&lt;/p&gt;</content><author><name>Your Name</name><email>your@email.com</email></author><category term="Sample-Posts" /><category term="sample post" /><category term="quotation" /><summary type="html">&quot;Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius - and a lot of courage - to move in the opposite direction.&quot;
+Albert Einstein</summary></entry><entry><title type="html">A Post with a Video</title><link href="http://localhost:4000/blog/video-post" rel="alternate" type="text/html" title="A Post with a Video" /><published>2014-01-07T00:00:00-05:00</published><updated>2014-01-07T00:00:00-05:00</updated><id>http://localhost:4000/blog/video-post</id><content type="html" xml:base="http://localhost:4000/blog/video-post">&lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&quot;http://fitvidsjs.com/&quot;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Not sure if this only effects Kramdown or if it’s an issue with Markdown in general. But adding YouTube video embeds causes errors when building your Jekyll site. To fix add a space between the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt; tags and remove &lt;code class=&quot;highlighter-rouge&quot;&gt;allowfullscreen&lt;/code&gt;. Example below:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;940&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;529&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//www.youtube.com/embed/CQJByFp7H38?theme=light&amp;amp;amp;color=white&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;frameborder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;allowfullscreen&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Your Name</name><email>your@email.com</email></author><category term="videos" /><category term="sample post" /><category term="video" /><summary type="html">Video embeds are responsive and scale with the width of the main content block with the help of FitVids.</summary></entry><entry><title type="html">Fancy Some Columns?</title><link href="http://localhost:4000/blog/fancy-columns" rel="alternate" type="text/html" title="Fancy Some Columns?" /><published>2014-01-07T00:00:00-05:00</published><updated>2014-01-07T00:00:00-05:00</updated><id>http://localhost:4000/blog/fancy-columns</id><content type="html" xml:base="http://localhost:4000/blog/fancy-columns">&lt;p&gt;Some Premium WordPress themes feature multi-column text entries, which is quite important for academics and engineers like myself for content presentation. HMFAYSAL OMEGA is the first Jekyll Theme to showcase multi-column text entries. HMFAYSAL OMEGA features four types of multi-column configuration, the first being the single column, the others are two, three and four columns. To insert a two-column text entry, simply enter this markup:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;col-md-6&quot;&amp;gt;  
+&amp;lt;p class=&quot;lead&quot;&amp;gt;Some Content Here for Column One&amp;lt;/p&amp;gt;  
+&amp;lt;/div&amp;gt;  
+
+&amp;lt;div class=&quot;col-md-6&quot;&amp;gt;  
+&amp;lt;p class=&quot;lead&quot;&amp;gt;Some Content Here for Column Two&amp;lt;/p&amp;gt;  
+&amp;lt;/div&amp;gt;
+&amp;lt;br&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Which results in two columns with your content and looks like the following:&lt;/p&gt;
+
+&lt;div class=&quot;col-md-6&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-6&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;For three-column text entry, simply enter this markup:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;col-md-4&quot;&amp;gt;  
+&amp;lt;p class=&quot;lead&quot;&amp;gt;Some Content Here for Column One&amp;lt;/p&amp;gt;  
+&amp;lt;/div&amp;gt;  
+
+&amp;lt;div class=&quot;col-md-4&quot;&amp;gt;  
+&amp;lt;p class=&quot;lead&quot;&amp;gt;Some Content Here for Column Two&amp;lt;/p&amp;gt;  
+&amp;lt;/div&amp;gt;  
+
+&amp;lt;div class=&quot;col-md-4&quot;&amp;gt;  
+&amp;lt;p class=&quot;lead&quot;&amp;gt;Some Content Here for Column Three&amp;lt;/p&amp;gt;  
+&amp;lt;/div&amp;gt; 
+&amp;lt;br&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Which results in three columns with your content and looks like the following:&lt;/p&gt;
+
+&lt;div class=&quot;col-md-4&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-4&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-4&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;For four-column text entry, simply enter this markup:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;col-md-3&quot;&amp;gt;  
+&amp;lt;p class=&quot;lead&quot;&amp;gt;Some Content Here for Column One&amp;lt;/p&amp;gt;  
+&amp;lt;/div&amp;gt;  
+
+&amp;lt;div class=&quot;col-md-3&quot;&amp;gt;  
+&amp;lt;p class=&quot;lead&quot;&amp;gt;Some Content Here for Column One&amp;lt;/p&amp;gt;  
+&amp;lt;/div&amp;gt;  
+
+&amp;lt;div class=&quot;col-md-3&quot;&amp;gt;  
+&amp;lt;p class=&quot;lead&quot;&amp;gt;Some Content Here for Column One&amp;lt;/p&amp;gt;  
+&amp;lt;/div&amp;gt;  
+
+&amp;lt;div class=&quot;col-md-3&quot;&amp;gt;  
+&amp;lt;p class=&quot;lead&quot;&amp;gt;Some Content Here for Column One&amp;lt;/p&amp;gt;  
+&amp;lt;/div&amp;gt;
+&amp;lt;br&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Which results in four columns with your content and looks like the following:&lt;/p&gt;
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also have multiple layouts.&lt;/p&gt;
+
+&lt;div class=&quot;col-md-6&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-3&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;col-md-4&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean&lt;/p&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;col-md-8&quot;&gt;  
+&lt;p class=&quot;lead&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum velit quis magna iaculis lacinia. Aenean sed nisi condimentum, placerat eros sit amet, lacinia purus. Ut sed euismod mauris. Morbi vitae diam quis diam egestas scelerisque a a ipsum.&lt;/p&gt;  
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;For any layout, make sure in the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div class=&quot;col-md-#&quot;&amp;gt;&lt;/code&gt; the &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;col-md-#&quot;&lt;/code&gt; numbers add up to 12. the You can include any type of elements between the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; tags, like texts, images, videos etc.&lt;/p&gt;</content><author><name>Your Name</name><email>your@email.com</email></author><category term="Sample-Posts" /><category term="sample post" /><category term="columns" /><summary type="html">Some Premium WordPress themes feature multi-column text entries, which is quite important for academics and engineers like myself for content presentation. HMFAYSAL OMEGA is the first Jekyll Theme to showcase multi-column text entries. HMFAYSAL OMEGA features four types of multi-column configuration, the first being the single column, the others are two, three and four columns. To insert a two-column text entry, simply enter this markup:</summary></entry><entry><title type="html">Sample Mathjax Post</title><link href="http://localhost:4000/blog/sample-mathjax-post" rel="alternate" type="text/html" title="Sample Mathjax Post" /><published>2014-01-06T00:00:00-05:00</published><updated>2014-01-06T00:00:00-05:00</updated><id>http://localhost:4000/blog/sample-mathjax-post</id><content type="html" xml:base="http://localhost:4000/blog/sample-mathjax-post">&lt;p&gt;HMFAYSAL OMEGA theme supports both inline and displayed equations via MathJax.  The theme keeps MathJax turned off by default to improve page load speed. MathJax can be turned on from the post’s Front Matter YAML. Simply put the following statement in the post’s Front Matter YAML:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mathjax: true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Here are some examples collected from the MathJax page: 
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Lorenz Equations&lt;/strong&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{aligned}
+\dot{x} &amp; = \sigma(y-x) \\
+\dot{y} &amp; = \rho x - y - xz \\
+\dot{z} &amp; = -\beta z + xy
+\end{aligned} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;The Cauchy-Schwarz Inequality&lt;/strong&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\left( \sum_{k=1}^n a_k b_k \right)^{\!\!2} \leq
+ \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;A Cross Product Formula&lt;/strong&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\mathbf{V}_1 \times \mathbf{V}_2 =
+   \begin{vmatrix}
+    \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+    \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \\
+    \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \\
+   \end{vmatrix} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;The probability of getting (k) heads when flipping (n) coins is:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(E) = {n \choose k} p^k (1-p)^{ n-k}&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;An Identity of Ramanujan&lt;/strong&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{1}{(\sqrt{\phi \sqrt{5}}-\phi) e^{\frac25 \pi}} =
+     1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+      {1+\frac{e^{-8\pi}} {1+\ldots} } } }&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;A Rogers-Ramanujan Identity&lt;/strong&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
+    \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})},
+     \quad\quad \text{for $|q|&lt;1$}. %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;strong&gt;Maxwell’s Equations&lt;/strong&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+  \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\
+  \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\
+  \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\
+  \nabla \cdot \vec{\mathbf{B}} &amp; = 0
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, while display equations look good for a page of samples, the
+ability to mix math and text in a paragraph is also important.  This
+expression $(\sqrt{3x-1}+(1+x)^2)$ is an example of an inline equation.  As
+you see, MathJax equations can be used this way as well, without unduly
+disturbing the spacing between lines.&lt;/p&gt;
+
+&lt;p&gt;In MathJax I use &lt;code class=&quot;highlighter-rouge&quot;&gt;$$...$$&lt;/code&gt; or (&lt;code class=&quot;highlighter-rouge&quot;&gt;\begin{equation(*)}...\end{equation(*)}&lt;/code&gt; also works) for displayed equations and &lt;code class=&quot;highlighter-rouge&quot;&gt;$....$&lt;/code&gt; for inline equations. Take care of &amp;gt;,&amp;lt; and &amp;amp;, because they have special meanings in .html files. If your post/page is not displaying the equations properly, try to wrap the equations between &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;raw&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;endraw&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; tags.&lt;/p&gt;</content><author><name>Your Name</name><email>your@email.com</email></author><category term="Sample-Posts" /><category term="sample post" /><category term="mathjax" /><summary type="html">HMFAYSAL OMEGA theme supports both inline and displayed equations via MathJax.  The theme keeps MathJax turned off by default to improve page load speed. MathJax can be turned on from the post’s Front Matter YAML. Simply put the following statement in the post’s Front Matter YAML:</summary></entry></feed>
