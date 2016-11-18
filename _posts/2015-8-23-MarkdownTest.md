@@ -108,6 +108,7 @@ to add extra (unwanted) `<p>` tags around HTML block-level tags.
 
 For example, to add an HTML table to a Markdown article:
 
+{% highlight js %}
     This is a regular paragraph.
 
     <table>
@@ -117,6 +118,7 @@ For example, to add an HTML table to a Markdown article:
     </table>
 
     This is another regular paragraph.
+{% endhighlight %}
 
 Note that Markdown formatting syntax is not processed within block-level
 HTML tags. E.g., you can't use Markdown-style `*emphasis*` inside an
